@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- NOS SIRVE PARA UTILIZAR CARACTERES ESPECIALES (Ñ, TILDES, $) -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <!-- compatibilidad con edge -->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <!-- adaptabilidad responsive -->
+    <title>aberturas misued</title>
+    <!-- titulo del sitio que se ve en la pestaña del navegador -->
+
+    <!-- esto es el link para agregar el icono en nuestra pestaña de pagina -->
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo misued.png"
+      type="image/x-icon"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/CSS/style.css" />
+
+    <!-- fuente de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    
+    <header>
+      <h1>Aberturas misued</h1>
+      <!-- titulo de pagina -->
+      <div>
+        <a href="../index.html"><!-- link dentro de imagen de logo -->
+          <img
+            src="../assets/img/logo misued.png"
+            alt="logo misued y direccion a inicio"
+            title="logo misued y direccion a inicio"
+          />
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="mipresupuesto.html">Mi presupuesto</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="deseosdeclientes.html">Deseos de clientes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- cierre de fila logo + nav -->
+    <!-- fila de información de mi sitio -->
+
+    <main>
+
+      <section id="secContacto">
+
+        <div id="img-contacto">
+          <img src="../assets/img/contacto.jpg" alt="imagen de contacto" />
+        </div>
+
+        <article>
+
+          <h2 class="tituloFormulario">CONTACTO</h2>
+          <!-- formulario de contacto -->
+
+          <form action="#">
+            <input type="text" placeholder="DECIME TU NOMBRE" /><br />
+            <label for="email"
+              >Decime tu email:
+              <input
+                type="email"
+                placeholder="aaa@gmail.com"
+                name="email"
+              />
+              <br />
+            </label>
+
+            <label for="Observaciones">
+              Observaciones:<br />
+              <textarea placeholder="Observaciones"></textarea>
+            </label>
+            <br />
+            <input type="number" placeholder="DECIME TU EDAD" /><br />
+
+            <div>
+              <p>Elegí un lado:</p>
+              <div>
+                Izquierda
+                <input type="radio" name="lado" value="izquierda" />
+              </div>
+              <div>
+                Derecha
+                <input type="radio" name="lado" value="derecha" />
+              </div>
+            </div>
+
+            <p>Que letra te gusta mas?</p>
+            <select name="letra" id="letra">
+              <option value="x">X</option>
+              <option value="y">Y</option>
+              <option value="z">Z</option>
+            </select>
+
+            <div>
+              Queres recibir info sobre nosotros?
+              <input type="checkbox" name="acepta" value="1" />
+            </div>
+
+            <input type="submit" value="PASAME LA DATA" />
+            <input type="reset" value="RESETEAR" />
+
+          </form>
+
+        </article>
+
+      </section>
+
+      <!-- ACA PONGO IFRAME, VER UBICACION EN ETIQUETA O BLOQUE -->
+      <iframe id="iframeMap"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.047580436297!2d-58.419100884699105!3d-34.62823788045316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb000f09fa85%3A0xc3ea495b856e80ea!2sColombres%201226%2C%20C1238%20CABA!5e0!3m2!1ses!2sar!4v1661470289791!5m2!1ses!2sar"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+    </main>
+
+    <!--la idea en esta barra es colocar imagenes-vinculos que lleven a mercado libre-->
+    <aside>
+      <h3>Encontrá en Mercado Libre:</h3>
+
+     <div>
+       <img
+         src="../assets/img/puerta modena blanca_imagen chica.png"
+         alt="puerta de rebatir, link a mercado libre"
+         title="puerta de rebatir, link a mercado libre"
+       />
+       <p>1° imagen con hipervinculo</p>
+     </div>
+
+     <div>
+       <img
+         src="../assets/img/mampara satinada para baño.png"
+         alt="mampara de baño, link a mercado libre"
+         title="mampara de baño, link a mercado libre"
+       />
+       <p>2° imagen con hipervinculo</p>
+     </div>
+   </aside>
+
+    <footer>
+      <img
+        src="../assets/img/footer.jpg"
+        alt="misued telefono y direccion"
+      />
+
+      <div class="redesSociales">
+        <a href="https://www.facebook.com/misued"><img src="../assets/img/facebook.svg" alt="facbook" title="facbook"></a>
+        <a href="https://www.instagram.com/aberturasmisued/"><img src="../assets/img/instagram.svg" alt="instagram" title="instagram"></a>
+      </div>
+
+      <div class="whatsapp">
+        <a href="https://wa.me/5491136727290?text=Hola Ivan de Misued, solicito mi presupuesto/consulta por favor (tipo de abertura, color, tipo de vidrio, etc.)"><img src="../assets/img/whatsapp.svg" alt="whatsapp" title="whatsapp"></a> 
+      </div>
+    </footer>
+
+  </body>
+</html>

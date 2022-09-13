@@ -1,0 +1,177 @@
+/*aplico un reseteador para eliminar espacios no aplicados*/
+* {
+  margin: 0;
+  /*padding: 0; */
+}
+
+/* cambio la medida del REM, para trabajar comodamente con 1rem=10px, dado que un rem quivale a 16px */
+html {
+  font-size: 62, 5%;
+}
+/*aplico la orden de trabajar con el 100 por ciento de mi pantalla*/
+html body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* BODY */
+
+/*CABECERA*/
+
+/*cabecera titulo*/
+header {
+  background-color: #fcfcff;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+}
+
+header h1 {
+  color: #002a64c1;
+  font-size: 4rem;
+}
+
+/*esto es una pseudo estilo de prueba para el titulo*/
+header h1:hover {
+  color: aquamarine;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap; /*aplico para que el contenido respete el tamaño y separacion de los elementos li del ul poniendolos en dos lineas horizontales por defecto, y asi evitar que me los junte o achique*/
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold; /* le doy mayor grosor a la letra */
+  list-style-type: none; /* elimino los puntos del menu list */
+  margin: 1, 5rem 1rem; /* SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
+}
+
+header nav ul li {
+  border-color: white;
+  border-left: solid 2px rgb(178, 194, 208); /* de esta manera borro los bordes que no quiero, luego abajo aplico especificidad */
+  border-right: solid 2px rgb(135, 200, 222); /* con estas propiedades jugué con el diseño de bordes en el menu*/
+
+  display: inline-block; /* convierto mi menu en horizontal y al ser también "block" le sumo propiedades de altura (de bloque), ver propiedad con flex box */
+  margin: 20px 0px;
+  padding: 8px 50px;
+}
+
+header nav ul a {
+  color: #ff009d;
+  text-decoration: none; /*le scao el subrayado al texto del menu*/
+}
+
+header nav ul a:hover {
+  color: rgb(3, 137, 137);
+}
+
+/*ASIDE*/
+
+aside {
+  background-color: yellow;
+
+  width: 150px;
+  height: auto;
+
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+
+  display: block;
+}
+/* background-color: rgb(221, 221, 138);
+  margin-top: 100px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+/* margin-right: 20%; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
+/*width: 250px;
+  height: auto;*/
+
+aside div img {
+  background-size: cover; /*funciona si solo si tengo un ancho y un alto espicificado en mi padre que contine el elemento imagen y obliga a mi imagen a cubrir el espacio del padre*/
+  width: 100px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+  height: 200px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+}
+
+/* FORMULARIOS */
+/* en este caso aplico css para FORMULARIO, para aplicar propiedades similares entre el formulario de "contacto" y "MI presupuesto" */
+
+main form {
+  margin: 0px 40px 20px 40px;
+}
+
+.tituloFormulario {
+  display: block;
+  margin: 50px;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #eef5ff;
+  margin-top: 50px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+}
+
+.redesSociales {
+  width: 50px;
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  display: block;
+}
+
+.whatsapp {
+  width: 50px;
+  position: fixed;
+  right: 5px;
+  bottom: 165px;
+  display: block;
+}
+
+/*clases del INDEX*/
+.mainIndex {
+  background-color: rgb(
+    172,
+    172,
+    172
+  ); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
+}
+
+/* clases SERVICIO.HTML */
+.mainServicios {
+  font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+  margin: auto 50px;
+}
+
+.tituloServicios {
+  /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+  margin: 50px 10px;
+}
+.mainDivServicios {
+  margin: 50px;
+}
+
+.mainH2 {
+  margin: 40px;
+}
+
+.mainPServicios {
+  font-style: oblique;
+  margin: 20px;
+}
+
+.textoColorAzul {
+  color: blue;
+}
+
+/* css de MI PRESUPUESTO */
+
+/* css de CONTACTO */
+
+#iframeMap {
+  margin: 50px 50px;
+}
