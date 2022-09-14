@@ -1,6 +1,6 @@
 /*aplico un reseteador para eliminar espacios no aplicados*/
 * {
-  margin: 0;
+  /* margin: 0; */
   /*padding: 0; */
 }
 
@@ -20,12 +20,14 @@ html body {
 
 /*cabecera titulo*/
 header {
-  background-color: #fcfcff;
+  background-color: #ffffff;
 
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+
+  margin-top: 0,5rem;
 
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
@@ -33,7 +35,8 @@ header {
 
 header h1 {
   color: #002a64c1;
-  font-size: 4rem;
+  font-size: 3,5rem;
+  margin-right: 2rem;
 }
 
 /*esto es una pseudo estilo de prueba para el titulo*/
@@ -49,7 +52,7 @@ header nav ul {
 
   font-weight: bold; /* le doy mayor grosor a la letra */
   list-style-type: none; /* elimino los puntos del menu list */
-  margin: 1, 5rem 1rem; /* SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
+  margin: 5px 1rem; /* SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
 }
 
 header nav ul li {
@@ -58,8 +61,8 @@ header nav ul li {
   border-right: solid 2px rgb(135, 200, 222); /* con estas propiedades jugué con el diseño de bordes en el menu*/
 
   display: inline-block; /* convierto mi menu en horizontal y al ser también "block" le sumo propiedades de altura (de bloque), ver propiedad con flex box */
-  margin: 20px 0px;
-  padding: 8px 50px;
+  margin: 0.5rem auto;
+  padding: 0.5rem 1.5rem;
 }
 
 header nav ul a {
@@ -68,22 +71,27 @@ header nav ul a {
 }
 
 header nav ul a:hover {
-  color: rgb(3, 137, 137);
+  color: rgb(3, 137, 137); /*con esta funcion doy color cuando señalo las palabras del menu*/
 }
 
 /*ASIDE*/
 
 aside {
-  background-color: yellow;
+  background-color: rgba(255,255,0,0.4); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
 
-  width: 150px;
-  height: auto;
+  width: 10rem;
+  height: 27rem;
 
   position: fixed;
-  right: 20px;
-  bottom: 10px;
+  right: 0.5rem;
+  bottom: 6rem;
 
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+aside div {
+  position: relative; /*especifico que sea la posicion relativa a tener en cuenta para el position absolute del hijo img*/
 }
 /* background-color: rgb(221, 221, 138);
   margin-top: 100px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
@@ -92,10 +100,21 @@ aside {
   height: auto;*/
 
 aside div img {
-  background-size: cover; /*funciona si solo si tengo un ancho y un alto espicificado en mi padre que contine el elemento imagen y obliga a mi imagen a cubrir el espacio del padre*/
-  width: 100px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
-  height: 200px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+/* con position absolute y display none estoy diciendo que  SE SALE DEL FLUJO NORMAL Y TOMA AL aside div como su padre 
+porque previamente dijimos que aside div es relative, luego el display none actúa ocultando el contenido, en este caso la imagen */
+  position: absolute;
+  display: none;
+
+  background-size: cover; /*funciona si solo si tengo un ancho y un alto espicificado en mi padre que contine el elemento imagen y obliga 
+  a mi imagen a cubrir el espacio del padre*/
+  width: 10rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+  height: 12rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
 }
+
+aside div:hover img {
+  display: flex;
+}
+
 
 /* FORMULARIOS */
 /* en este caso aplico css para FORMULARIO, para aplicar propiedades similares entre el formulario de "contacto" y "MI presupuesto" */
@@ -117,10 +136,13 @@ footer {
 }
 
 .redesSociales {
+
   width: 50px;
+
   position: fixed;
   right: 5px;
-  bottom: 50px;
+  bottom: 7rem;
+
   display: block;
 }
 
@@ -128,17 +150,18 @@ footer {
   width: 50px;
   position: fixed;
   right: 5px;
-  bottom: 165px;
+  bottom: 1rem;
   display: block;
 }
 
 /*clases del INDEX*/
 .mainIndex {
-  background-color: rgb(
-    172,
-    172,
-    172
-  ); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
+  background-color: rgb(199, 238, 236); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
+}
+
+.sectionIndex {
+  width: auto;
+  height: auto;
 }
 
 /* clases SERVICIO.HTML */
