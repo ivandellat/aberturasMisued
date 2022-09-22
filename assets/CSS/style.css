@@ -47,7 +47,7 @@ header {
 
 header h1 {
   color: #002a64c1;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
 }
 
@@ -63,6 +63,7 @@ header nav ul {
   align-items: center;
 
   font-weight: bold; /* le doy mayor grosor a la letra */
+  font-size: 1.3rem;
   list-style-type: none; /* elimino los puntos del menu list */
 
   margin: 0.3rem 0.3rem; /* SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
@@ -96,7 +97,7 @@ main {
 /*ASIDE*/
 
 aside {
-  background-color: rgba(233, 233, 127, 0.75); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background-color: rgba(255, 255, 248, 0.585); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
 
   width: 10rem;
   height: 27rem;
@@ -122,7 +123,7 @@ aside div {
   font-weight: bolder; /*texto mas remarcado*/
 
   position: relative; /*especifico que sea la posicion relativa a tener en cuenta para el position absolute del hijo img*/
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 /* background-color: rgb(221, 221, 138);
   margin-top: 100px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
@@ -162,8 +163,11 @@ main form {
 /*FOOTER*/
 
 footer {
-  background-color: #eef5ff;
+  background-color: #ffffff;
   margin-top: 50px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
 
   grid-area: footer;
 }
@@ -173,23 +177,21 @@ footer {
   width: 50px;
 
   position: fixed;
-  right: 5px;
-  bottom: 7rem;
-
-  display: inline;
+  right: 0.4rem;
+  bottom: 9rem;
 }
 
 .whatsapp {
   width: 50px;
   position: fixed;
-  right: 5px;
-  bottom: 1rem;
-  display: inline;
+  right: 0.1rem;
+  bottom: 0.5rem;
 }
 
 /*clases del INDEX*/
+
 .mainIndex {
-  background-color: rgb(2, 202, 192); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
+  background-color: rgb(235, 243, 243); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -240,6 +242,7 @@ footer {
 }
 
 /* clases SERVICIO.HTML */
+
 .mainServicios {  
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
   margin: auto 50px;
