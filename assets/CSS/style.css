@@ -1,7 +1,7 @@
 /*aplico un reseteador para eliminar espacios no aplicados*/
 * {
-  /* margin: 0; */
-  /*padding: 0; */
+   margin: 0;
+  padding: 0; 
 }
 
 /* cambio la medida del REM, para trabajar comodamente con 1rem=10px, dado que un rem quivale a 16px */
@@ -10,6 +10,16 @@ html {
 }
 /*aplico la orden de trabajar con el 100 por ciento de mi pantalla*/
 html body {
+  display: grid;
+  grid-template-columns: 5fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: 
+  "header"
+  "main"
+  "main"
+  "main"
+  "footer" ;
+
   width: 100%;
   height: 100vh;
 }
@@ -27,6 +37,8 @@ header {
   justify-content: center;
   align-items: center;
 
+  grid-area: header;
+
   margin-top: 0,5rem;
 
   font-size: 1.5rem;
@@ -35,8 +47,8 @@ header {
 
 header h1 {
   color: #002a64c1;
-  font-size: 3,5rem;
-  margin-right: 2rem;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 /*esto es una pseudo estilo de prueba para el titulo*/
@@ -52,7 +64,8 @@ header nav ul {
 
   font-weight: bold; /* le doy mayor grosor a la letra */
   list-style-type: none; /* elimino los puntos del menu list */
-  margin: 5px 1rem; /* SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
+
+  margin: 0.3rem 0.3rem; /* SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
 }
 
 header nav ul li {
@@ -74,10 +87,16 @@ header nav ul a:hover {
   color: rgb(3, 137, 137); /*con esta funcion doy color cuando señalo las palabras del menu*/
 }
 
+/*main*/
+
+main {
+  grid-area: main; /*solo lo creo para poder darle funcionamiento al grid para lograr la media queris*/
+}
+
 /*ASIDE*/
 
 aside {
-  background-color: rgba(255,255,0,0.4); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background-color: rgba(233, 233, 127, 0.75); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
 
   width: 10rem;
   height: 27rem;
@@ -88,10 +107,22 @@ aside {
 
   display: flex;
   flex-flow: column wrap;
+
+  grid-area: aside;
+}
+
+aside h3 {
+  text-align: center;
 }
 
 aside div {
+  color: #0c4056;
+  font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+  font-size: 1.5rem;
+  font-weight: bolder; /*texto mas remarcado*/
+
   position: relative; /*especifico que sea la posicion relativa a tener en cuenta para el position absolute del hijo img*/
+  margin-top: 1rem;
 }
 /* background-color: rgb(221, 221, 138);
   margin-top: 100px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
@@ -133,6 +164,8 @@ main form {
 footer {
   background-color: #eef5ff;
   margin-top: 50px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+
+  grid-area: footer;
 }
 
 .redesSociales {
@@ -143,7 +176,7 @@ footer {
   right: 5px;
   bottom: 7rem;
 
-  display: block;
+  display: inline;
 }
 
 .whatsapp {
@@ -151,21 +184,63 @@ footer {
   position: fixed;
   right: 5px;
   bottom: 1rem;
-  display: block;
+  display: inline;
 }
 
 /*clases del INDEX*/
 .mainIndex {
-  background-color: rgb(199, 238, 236); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
+  background-color: rgb(2, 202, 192); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "img1 img2 img3"
+  "img1 img2 img4";
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+
+  width: auto;
+  height: 50rem;
 }
 
-.sectionIndex {
-  width: auto;
-  height: auto;
+/* .sectionIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "img1 img2 img3"
+  "img1 img2 img4";
+
+  width: 2330px;
+  height: 800px;
+} */
+
+.divIndex1 {
+  background-image: url("../img/cocina\ ventana\ blanca\ modena.png");
+  background-size: cover;
+  grid-area:img1;
+}
+
+.divIndex2 {
+  background-image: url("../img/mampara\ vidrio\ blanco\ junin.png");
+  background-size: cover;
+  grid-area: img2;
+}
+
+.divIndex3 {
+  background-image: url("../img/escalera_galeria.jpg");
+  background-size: cover;
+  grid-area: img3
+}
+
+.divIndex4 {
+  background-image: url("../img/puerta\ hierro\ con\ vidrio\ esmerilado.png");
+  background-size: cover;
+  grid-area: img4;
 }
 
 /* clases SERVICIO.HTML */
-.mainServicios {
+.mainServicios {  
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
   margin: auto 50px;
 }

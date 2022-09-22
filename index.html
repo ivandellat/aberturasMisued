@@ -29,13 +29,13 @@
     />
   </head>
 
-  <body>
-    
-    <header>
+  <body class="bodyGrid">
+    <header class="headerGrid">
       <h1>Aberturas misued</h1>
       <!-- titulo de pagina -->
       <div>
-        <a href="index.html"><!-- link dentro de imagen de logo -->
+        <a href="index.html"
+          ><!-- link dentro de imagen de logo -->
           <img
             src="./assets/img/logo misued.png"
             alt="logo misued y direccion a inicio"
@@ -43,6 +43,7 @@
           />
         </a>
       </div>
+
       <nav>
         <ul>
           <li><a href="./index.html">INICIO</a></li>
@@ -57,44 +58,65 @@
     </header>
 
     <main class="mainIndex">
-      <section class="sectionIndex">
-        <img
+
+     <!-- <section class="sectionIndex"> -->
+      <!-- <img class="imgIndex1"
           src="./assets/img/cocina ventana blanca modena.png"
           alt="imagen de corrediza modena blanca"
           title="imagen de corrediza modena blanca"
-        />
+      />
+      <img class="imgIndex2"
+          src="./assets/img/espejos_galeria.jpg" 
+          alt="espejos" 
+          title="espejos"
+      />
+      <img class="imgIndex3"
+          src="./assets/img/mampara vidrio blanco junin 2.png" 
+          alt="mampara vidrio" 
+          title="mampara vidrio"
+      />
+      <img class="imgIndex4"
+          src="./assets/img/puerta hierro con vidrio esmerilado.png" 
+          alt="puerta hierro con vidrio" 
+          title="puerta hierro con vidrio"
+      /> -->
+
+  <div class="divIndex1"></div>
+  <div class="divIndex2"></div>
+  <div class="divIndex3"></div>
+  <div class="divIndex4"></div>
+      
       </section>
     </main>
 
-    <aside>
-
+    <aside class="asideGrid">
       <h3>Encontrá en Mercado Libre:</h3>
 
-       <div>
-         <img
-           src="./assets/img/puerta modena blanca_imagen chica.png"
-           alt="puerta de rebatir, link a mercado libre"
-           title="puerta de rebatir, link a mercado libre"
-         />
-         <p>1° imagen con hipervinculo</p>
-       </div>
+      <div>
+        <img
+          src="./assets/img/puerta modena blanca_imagen chica.png"
+          alt="puerta de rebatir, link a mercado libre"
+          title="puerta de rebatir, link a mercado libre"
+        />
+        <p>puerta de rebatir</p>
+      </div>
 
-       <div>
-         <img
-           src="./assets/img/mampara satinada para baño.png"
-           alt="mampara de baño, link a mercado libre"
-           title="mampara de baño, link a mercado libre"
-         />
-         <p>2° imagen con hipervinculo</p>
-       </div>
+      <div>
+        <img
+          src="./assets/img/mampara satinada para baño.png"
+          alt="mampara de baño, link a mercado libre"
+          title="mampara de baño, link a mercado libre"
+        />
+        <p>mampara de baño</p>
+      </div>
 
-       <div>
+      <div>
         <img
           src="./assets/img/pecera vidriada_galeria.jpg"
           alt="mampara de baño, link a mercado libre"
           title="mampara de baño, link a mercado libre"
         />
-        <p>3° imagen con hipervinculo</p>
+        <p>cerramiento vidriado</p>
       </div>
 
       <div>
@@ -103,7 +125,7 @@
           alt="mampara de baño, link a mercado libre"
           title="mampara de baño, link a mercado libre"
         />
-        <p>4° imagen con hipervinculo</p>
+        <p>ventana aluminio</p>
       </div>
 
       <div>
@@ -112,28 +134,36 @@
           alt="mampara de baño, link a mercado libre"
           title="mampara de baño, link a mercado libre"
         />
-        <p>5° imagen con hipervinculo</p>
+        <p>techo vidriado</p>
       </div>
-
     </aside>
 
-    <footer>
+    <footer class="footerGrid">
+    
+        <img src="./assets/img/footer.jpg" alt="misued telefono y direccion" />
 
-      <img
-        src="./assets/img/footer.jpg"
-        alt="misued telefono y direccion"
-      />
+        <div class="redesSociales">
+          <a href="https://www.facebook.com/misued"
+            ><img src="./assets/img/facebook.svg" alt="facbook" title="facbook"
+          /></a>
+          <a href="https://www.instagram.com/aberturasmisued/"
+            ><img
+              src="./assets/img/instagram.svg"
+              alt="instagram"
+              title="instagram"
+          /></a>
+        </div>
 
-      <div class="redesSociales">
-        <a href="https://www.facebook.com/misued"><img src="./assets/img/facebook.svg" alt="facbook" title="facbook"></a>
-        <a href="https://www.instagram.com/aberturasmisued/"><img src="./assets/img/instagram.svg" alt="instagram" title="instagram"></a>
-      </div>
-
-      <div class="whatsapp">
-        <a href="https://wa.me/5491136727290?text=Hola Ivan de Misued, solicito mi presupuesto/consulta por favor (tipo de abertura, color, tipo de vidrio, etc.)"><img src="./assets/img/whatsapp.svg" alt="whatsapp" title="whatsapp"></a> 
-      </div>
+        <div class="whatsapp">
+          <a
+            href="https://wa.me/5491136727290?text=Hola Ivan de Misued, solicito mi presupuesto/consulta por favor (tipo de abertura, color, tipo de vidrio, etc.)"
+            ><img
+              src="./assets/img/whatsapp.svg"
+              alt="whatsapp"
+              title="whatsapp"
+          /></a>
+        </div>
 
     </footer>
-
   </body>
 </html>
