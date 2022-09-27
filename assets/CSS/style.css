@@ -8,6 +8,7 @@
 html {
   font-size: 62, 5%;
 }
+
 /*aplico la orden de trabajar con el 100 por ciento de mi pantalla*/
 html body {
   display: grid;
@@ -30,7 +31,7 @@ html body {
 
 /*cabecera titulo*/
 header {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
 
   display: flex;
   flex-flow: row wrap;
@@ -119,21 +120,16 @@ aside h3 {
 aside div {
   color: #0c4056;
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bolder; /*texto mas remarcado*/
 
   position: relative; /*especifico que sea la posicion relativa a tener en cuenta para el position absolute del hijo img*/
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 }
-/* background-color: rgb(221, 221, 138);
-  margin-top: 100px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
-/* margin-right: 20%; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
-/*width: 250px;
-  height: auto;*/
 
 aside div img {
-/* con position absolute y display none estoy diciendo que  SE SALE DEL FLUJO NORMAL Y TOMA AL aside div como su padre 
-porque previamente dijimos que aside div es relative, luego el display none actúa ocultando el contenido, en este caso la imagen */
+/* con position absolute y display none estoy diciendo que  SE SALE DEL FLUJO NORMAL Y TOMA AL aside div como su 
+padre porque previamente dijimos que aside div es relative, luego el display none actúa ocultando el contenido, en este caso la imagen */
   position: absolute;
   display: none;
 
@@ -164,31 +160,65 @@ main form {
 
 footer {
   background-color: #ffffff;
-  margin-top: 50px; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+  margin-top: 1.5rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
   display: flex;
-  flex-wrap: row wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 
   grid-area: footer;
 }
 
+footer h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: large;
+
+  margin-left: 21rem;
+}
+
+footer div {
+  display: flex;    /*aplico propiedad para poder aplicar padding a los hijos y separarlos entre sí, además aplico direccion y wrap/responsivo*/
+  flex-flow: column wrap; 
+}
+
+footer div a {
+  padding-top: 3.5rem; /*con esta propiedad y gracias que hice flexible al div padre pude aplicarle propiedades box*/
+  padding-left: 1.5rem;
+}
+
+/*clases del footer*/
+
+.footerGrid {
+  width: auto;
+  height: 10.62rem;
+
+  background-image: url("../img/Diapositiva1.JPG");
+  background-repeat: no-repeat; /*de esta manera */
+  background-position: center center; /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
+}
+
+.telefonoFooter {
+  margin-left: 20rem;
+}
+
 .redesSociales {
 
-  width: 50px;
+  width: 4.2rem;
 
   position: fixed;
-  right: 0.4rem;
-  bottom: 9rem;
+  right: 0.1rem;
+  bottom: 7rem;;
 }
 
 .whatsapp {
-  width: 50px;
+  width: 4.2rem;
   position: fixed;
   right: 0.1rem;
-  bottom: 0.5rem;
+  bottom: 0.7rem;
 }
 
-/*clases del INDEX*/
+/*clases de la PAGE INDEX*/
 
 .mainIndex {
   background-color: rgb(235, 243, 243); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
@@ -204,18 +234,6 @@ footer {
   width: auto;
   height: 50rem;
 }
-
-/* .sectionIndex {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "img1 img2 img3"
-  "img1 img2 img4";
-
-  width: 2330px;
-  height: 800px;
-} */
 
 .divIndex1 {
   background-image: url("../img/cocina\ ventana\ blanca\ modena.png");
@@ -237,9 +255,11 @@ footer {
 
 .divIndex4 {
   background-image: url("../img/puerta\ hierro\ con\ vidrio\ esmerilado.png");
-  background-size: cover;
+  background-position:left;
+  background-size: contain;
   grid-area: img4;
 }
+
 
 /* clases SERVICIO.HTML */
 
@@ -274,7 +294,7 @@ footer {
 /* css de CONTACTO */
 
 #iframeMap {
-  margin: 50px 50px;
+   margin: 4rem 4rem;
 }
 
 /* aplico responsive designe */
