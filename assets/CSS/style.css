@@ -35,7 +35,7 @@ header {
 
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  /* justify-content: center;*/ /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
   align-items: center;
 
   grid-area: header;
@@ -49,7 +49,8 @@ header {
 header h1 {
   color: #002a64c1;
   font-size: 1.5rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
+  font-weight: bold;
 }
 
 /*esto es una pseudo estilo de prueba para el titulo*/
@@ -67,7 +68,7 @@ header nav ul {
   font-size: 1.3rem;
   list-style-type: none; /* elimino los puntos del menu list */
 
-  margin: 0.3rem 0.3rem; /* SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
+  /* margin: 0.3rem 0.3rem; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
 }
 
 header nav ul li {
@@ -173,6 +174,7 @@ footer h2 {
   font-family: "Montserrat", sans-serif;
   color: #505052f7;
   font-size: large;
+  font-weight: bold;
 
   margin-left: 12rem;
 }
