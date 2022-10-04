@@ -13,12 +13,9 @@
     <!-- esto es el link para agregar el icono en nuestra pestaña de pagina -->
     <link
       rel="shortcut icon"
-      href="../assets/img/logo misued.png"
+      href="../assets/img/logo de misued ICO.ico"
       type="image/x-icon"
     />
-
-    <!-- css -->
-    <link rel="stylesheet" href="../assets/CSS/style.css" />
 
     <!-- fuente de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,32 +24,42 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
       rel="stylesheet"
     />
+
+    <!-- bootstrap por cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- css tratar de que todo lo relacionado a estilos esté al final de la etiqueta head-->
+    <link rel="stylesheet" href="../assets/CSS/style.css" />
+
   </head>
 
-  <body>
-    
-    <header>
+  <body class="bodyGrid">
+
+    <header class="headerGrid d-flex justify-content-around"> <!--acá aplico clase de bootstrap-->
       <h1>Aberturas misued</h1>
       <!-- titulo de pagina -->
       <div>
-        <a href="../index.html"><!-- link dentro de imagen de logo -->
+        <a href="../index.html"
+          ><!-- link dentro de imagen de logo -->
           <img
-          src="../assets/img/logo circular.jpg"
-          alt="logo misued y direccion a inicio"
-          title="logo misued y direccion a inicio"
-          width="150px" 
-          height="150px"
-        />
-        <!-- especifique altura y ancho de la imgagen debido a que era mucho mas alta -->
+            src="../assets/img/logo circular.jpg"
+            alt="logo misued y direccion a inicio"
+            title="logo misued y direccion a inicio"
+            width="150px" 
+            height="150px"
+          />
+          <!-- especifique altura y ancho de la imgagen debido a que era mucho mas alta -->
         </a>
       </div>
-
+  
       <nav>
         <ul>
           <li><a href="../index.html">INICIO</a></li>
           <li><a href="mipresupuesto.html">Mi presupuesto</a></li>
           <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="deseosdeclientes.html">Deseos de clientes</a></li>
+          <li>
+            <a href="deseosdeclientes.html">Deseos de clientes</a>
+          </li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -188,35 +195,35 @@
       </div>
     </aside>
 
-   <footer class="footerGrid">
+    <footer class="footerGrid">
     
-    <h2>Colombres 1226, C.A.B.A. (Boedo)</h2>
-    <h2 class="telefonoFooter">Tel: 11-2138 4412</h2>
+      <h2>Colombres 1226, C.A.B.A. (Boedo)</h2>
+       <h2 class="telefonoFooter">Tel: 11-2138 4412</h2>
 
-   <div class="redesSociales">
-      <a href="https://www.facebook.com/misued"
-        ><img src="../assets/img/facebook prueva.svg" alt="facbook" title="facbook"
-      /></a>
+     <div class="redesSociales">
+        <a href="https://www.facebook.com/misued"
+          ><img src="../assets/img/facebook prueva.svg" alt="facbook" title="facbook"
+        /></a>
 
-     <a href="https://www.instagram.com/aberturasmisued/"
-        ><img
-          src="../assets/img/instagram.svg"
-          alt="instagram"
-          title="instagram"
-      /></a> 
-    </div> 
+       <a href="https://www.instagram.com/aberturasmisued/"
+          ><img class="instagram"
+            src="../assets/img/instagram.svg"
+            alt="instagram"
+            title="instagram"
+        /></a> 
+      </div> 
 <!-- creo una clase en whatsapp para poder aplicar separacion entre los botones de redes -->
-    <div class="whatsapp">
-      <a
-        href="https://wa.me/5491136727290?text=Hola Ivan de Misued, solicito mi presupuesto/consulta por favor (tipo de abertura, color, tipo de vidrio, etc.)"
-        ><img
-          src="../assets/img/whatsapp prueba.svg"
-          alt="whatsapp"
-          title="whatsapp"
-      /></a>
-    </div>
+      <div class="whatsapp">
+        <a
+          href="https://wa.me/5491136727290?text=Hola Ivan de Misued, solicito mi presupuesto/consulta por favor (tipo de abertura, color, tipo de vidrio, etc.)"
+          ><img
+            src="../assets/img/whatsapp prueba.svg"
+            alt="whatsapp"
+            title="whatsapp"
+        /></a>
+      </div>
 
-</footer>
+  </footer>
 
   </body>
 </html>

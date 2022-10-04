@@ -17,8 +17,6 @@ html body {
   grid-template-areas: 
   "header"
   "main"
-  "main"
-  "main"
   "footer" ;
 
   width: 100%;
@@ -277,6 +275,8 @@ footer div a {
 .mainServicios {  
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
   margin: auto 50px;
+
+
 }
 
 .tituloServicios {
