@@ -308,5 +308,22 @@ footer div a {
    margin: 4rem 4rem;
 }
 
+/* css de Deseos de clientes */
+
+.textCarousel {
+  color: #00027e;
+  font-size: 2rem;
+  /* margin-right: 1rem; */
+  font-weight: bold;
+}
+
+.textCarousel2 {
+  color: #fbfbfbc1;
+  font-size: 2rem;
+  /* margin-right: 1rem; */
+  font-weight: bold;
+}
+
+
 /* aplico responsive designe */
 
