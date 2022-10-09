@@ -97,10 +97,10 @@ main {
 /*ASIDE*/
 
 aside {
-  background-color: rgba(255, 255, 248, 0.585); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background-color: rgba(255, 255, 248, 0.2); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
 
   width: 10rem;
-  height: 27rem;
+  height: 37rem;
 
   position: fixed;
   right: 0.5rem;
@@ -117,10 +117,10 @@ aside h3 {
 }
 
 aside div {
-  color: #0c4056;
+  color: #000000;
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
   font-size: 1.3rem;
-  font-weight: bolder; /*texto mas remarcado*/
+  font-weight:bold; /*texto mas remarcado*/
 
   position: relative; /*especifico que sea la posicion relativa a tener en cuenta para el position absolute del hijo img*/
   margin-top: 1rem;
@@ -138,11 +138,37 @@ padre porque previamente dijimos que aside div es relative, luego el display non
   height: 12rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
 }
 
-aside div:hover img {
+aside div:hover img { 
   display: flex;
 }
 
+/* clases para el menu desplegable de MERCADO LIBRE */
 
+aside ul {
+  padding-left: 0rem;
+}
+
+aside ul li {
+  display: inline-block;
+  position: relative;
+}
+
+aside ul li ul {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+}
+
+aside ul li:hover ul {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgba(104, 229, 229, 0.585); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+}
+
+aside p {
+  text-decoration: none;
+  color: #ff009d;
+}
 /* FORMULARIOS */
 /* en este caso aplico css para FORMULARIO, para aplicar propiedades similares entre el formulario de "contacto" y "MI presupuesto" */
 
