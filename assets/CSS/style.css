@@ -1,7 +1,7 @@
 /*aplico un reseteador para eliminar espacios no aplicados*/
 * {
    margin: 0;
-  padding: 0; 
+   padding: 0; 
 }
 
 /* cambio la medida del REM, para trabajar comodamente con 1rem=10px, dado que un rem quivale a 16px */
@@ -33,37 +33,35 @@ header {
 
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: center;*/ /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
+  justify-content: center;  /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
   align-items: center;
 
   grid-area: header;
 
   margin-top: 0,5rem;
-
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
 }
 
 header h1 {
   color: #002a64c1;
   font-size: 1.5rem;
-  /* margin-right: 1rem; */
+  /*margin-right: 1rem; */
   font-weight: bold;
 }
 
 /*esto es una pseudo estilo de prueba para el titulo*/
 header h1:hover {
-  color: aquamarine;
+  color: rgb(0, 224, 150);
 }
 
 header nav ul {
   display: flex;
   flex-flow: row wrap; /*aplico para que el contenido respete el tamaño y separacion de los elementos li del ul poniendolos en dos lineas horizontales por defecto, y asi evitar que me los junte o achique*/
   justify-content: center;
-  align-items: center;
-
+  align-items:center;
   font-weight: bold; /* le doy mayor grosor a la letra */
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   list-style-type: none; /* elimino los puntos del menu list */
 
   /* margin: 0.3rem 0.3rem; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
@@ -97,14 +95,15 @@ main {
 /*ASIDE*/
 
 aside {
-  background-color: rgba(255, 255, 248, 0.2); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background-color: rgba(247, 247, 21, 0.2); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background: linear-gradient(to bottom,rgba(77, 77, 76, 0.6), rgb(255, 255, 255, 0.5));
 
   width: 10rem;
-  height: 37rem;
+  height: 39.5rem;
 
   position: fixed;
   right: 0.5rem;
-  bottom: 6rem;
+  bottom: 3.8rem;
 
   display: flex;
   flex-flow: column wrap;
@@ -113,7 +112,14 @@ aside {
 }
 
 aside h3 {
+  color: #fbff00;
+  font-size: 1.2rem;
+  font-weight: 1000;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
   text-align: center;
+
+  padding-top: 0.2rem;
 }
 
 aside div {
@@ -123,7 +129,7 @@ aside div {
   font-weight:bold; /*texto mas remarcado*/
 
   position: relative; /*especifico que sea la posicion relativa a tener en cuenta para el position absolute del hijo img*/
-  margin-top: 1rem;
+  margin-top: 1.6rem;
 }
 
 aside div img {
@@ -142,7 +148,7 @@ aside div:hover img {
   display: flex;
 }
 
-/* clases para el menu desplegable de MERCADO LIBRE */
+/* css para el menu desplegable de MERCADO LIBRE */
 
 aside ul {
   padding-left: 0rem;
@@ -162,18 +168,26 @@ aside ul li ul {
 aside ul li:hover ul {
   display: flex;
   flex-flow: column wrap;
-  background-color: rgba(104, 229, 229, 0.585); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background-color: rgb(126, 186, 226); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background: linear-gradient(to bottom,rgba(255, 255, 209, 0.5), rgb(255, 255, 255));
+}
+
+aside a {
+  text-decoration: none;
 }
 
 aside p {
-  text-decoration: none;
-  color: #ff009d;
+  color: #070706;
+  font-family: "Montserrat", sans-serif;
 }
 /* FORMULARIOS */
 /* en este caso aplico css para FORMULARIO, para aplicar propiedades similares entre el formulario de "contacto" y "MI presupuesto" */
 
 main form {
   margin: 0px 40px 20px 40px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 60rem;
 }
 
 .tituloFormulario {
@@ -266,32 +280,32 @@ footer div a {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
 
-  width: auto;
-  height: 50rem;
+  width: 95rem;
+  height: 40rem;
 }
 
 .divIndex1 {
-  background-image: url("../img/cocina\ ventana\ blanca\ modena.png");
+  background-image: url("../img/puerta\ y\ ventana\ cansino.jpg");
   background-size: cover;
   grid-area:img1;
 }
 
 .divIndex2 {
-  background-image: url("../img/mampara\ vidrio\ blanco\ junin.png");
+  background-image: url("../img/escalera_galeria.jpg");
   background-size: cover;
   grid-area: img2;
 }
 
 .divIndex3 {
-  background-image: url("../img/escalera_galeria.jpg");
+  background-image: url("../img/paños\ fijos_galeria.jpg");
   background-size: cover;
   grid-area: img3
 }
 
 .divIndex4 {
-  background-image: url("../img/puerta\ hierro\ con\ vidrio\ esmerilado.png");
+  background-image: url("../img/vc2_galeria.jpg");
   background-position:left;
-  background-size: contain;
+  background-size: cover;
   grid-area: img4;
 }
 
@@ -301,13 +315,20 @@ footer div a {
 .mainServicios {  
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
   margin: auto 50px;
-
-
+  font-size: 1.2rem;
+  font-weight: 1000;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
 }
 
 .tituloServicios {
   /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
   margin: 50px 10px;
+  font-size: 1.2rem;
+  font-weight: 1000;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  text-align: center;
 }
 .mainDivServicios {
   margin: 50px;
@@ -318,12 +339,20 @@ footer div a {
 }
 
 .mainPServicios {
-  font-style: oblique;
-  margin: 20px;
+  font-size: 1.2rem;
+  font-weight: 1000;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .textoColorAzul {
   color: blue;
+}
+
+.divServicios2 {
+  background-color: rgb(255, 248, 248)
+
 }
 
 /* css de MI PRESUPUESTO */
@@ -332,22 +361,51 @@ footer div a {
 
 #iframeMap {
    margin: 4rem 4rem;
+   width: 75rem;
+}
+
+.secContacto {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.img-contacto {
+  width: 30rem;
+  height: fit-content;
+  margin-left: 2.5rem;
+  padding-top: 1rem;
 }
 
 /* css de Deseos de clientes */
+.galeria {
+  width: 60rem;
+  height: min-content;
+  margin-left: 15rem;
+}
 
 .textCarousel {
-  color: #00027e;
-  font-size: 2rem;
+  background-color: rgba(104, 105, 105, 0.3);
+  color: #fefeff;
+  font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+  font-size: 1.8rem;
   /* margin-right: 1rem; */
-  font-weight: bold;
+  font-weight: bolder;
+  text-align: left;
 }
 
 .textCarousel2 {
-  color: #fbfbfbc1;
-  font-size: 2rem;
+  background-color: rgba(104, 105, 105, 0.3);
+  color: #fefeff;
+  font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+  font-size: 1.8rem;
   /* margin-right: 1rem; */
-  font-weight: bold;
+  font-weight: bolder;
+  text-align: left;
+
+}
+
+.carousel-item {
+  background-size:contain;
 }
 
 
