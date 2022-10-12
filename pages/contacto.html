@@ -88,42 +88,43 @@
                 type="email"
                 placeholder="aaa@gmail.com"
                 name="email"
+                class="inputMediumMail"
               />
               <br />
             </label>
 
-            <label for="Observaciones">
+            <label for="Observaciones" class="formPadding">
               Observaciones:<br />
-              <textarea placeholder="Observaciones"></textarea>
+              <textarea placeholder="Observaciones" class="inputMediumObs"></textarea>
             </label>
             <br />
             <input type="number" placeholder="DECIME TU EDAD" /><br />
 
-            <div>
+            <!-- <div>
               <p>Elegí un lado:</p>
               <div>
                 Izquierda
-                <input type="radio" name="lado" value="izquierda" />
+                <input type="radio" name="lado" value="izquierda" class="NoFocus-form" /> <!--creo el NoFocus para eliminar el focus por herencia y aprovecho a personalizar
               </div>
               <div>
                 Derecha
-                <input type="radio" name="lado" value="derecha" />
+                <input type="radio" name="lado" value="derecha" class="NoFocus-form" /><!--creo el NoFocus para eliminar el focus por herencia y aprovecho a personalizar
               </div>
-            </div>
+            </div> -->
 
-            <p>Que letra te gusta mas?</p>
+            <p class="formPadding">Que letra te gusta mas?</p>
             <select name="letra" id="letra">
               <option value="x">X</option>
               <option value="y">Y</option>
               <option value="z">Z</option>
             </select>
 
-            <div>
+            <div class="formPadding">
               Queres recibir info sobre nosotros?
-              <input type="checkbox" name="acepta" value="1" />
+              <input type="checkbox" name="acepta" value="1" class="NoFocus-form" /><!--creo el NoFocus para eliminar el focus por herencia y aprovecho a personalizar-->
             </div>
 
-            <input type="submit" value="PASAME LA DATA" />
+            <input type="submit" value="PASAME LA DATA" class="formPadding" />
             <input type="reset" value="RESETEAR" />
 
           </form>

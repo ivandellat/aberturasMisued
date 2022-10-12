@@ -122,6 +122,11 @@ aside h3 {
   padding-top: 0.2rem;
 }
 
+aside h3:hover {
+  background-color: #808145;
+  color: white;
+}
+
 aside div {
   color: #000000;
   font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
@@ -193,6 +198,15 @@ main form {
 .tituloFormulario {
   display: block;
   margin: 50px;
+}
+
+.inputMediumMail {
+  width: 10rem;
+}
+
+.formPadding {
+  padding-top: 1.5rem;
+  background-color: aliceblue;
 }
 
 /*FOOTER*/
@@ -376,6 +390,14 @@ footer div a {
   padding-top: 1rem;
 }
 
+.inputMediumMail {
+  width: 30rem;
+}
+
+.inputMediumObs {
+  width: 45rem;
+}
+
 /* css de Deseos de clientes */
 .galeria {
   width: 60rem;
@@ -407,6 +429,42 @@ footer div a {
 .carousel-item {
   background-size:contain;
 }
+
+/*aplico pseudoclase*/
+
+a:link {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+a:active {
+  background-color: aqua;
+  color: #fbff00;
+}
+
+input:focus {
+  background-color: rgb(172, 208, 247);
+  width: 70rem;
+  height: 3rem;
+}
+
+textarea:focus {
+  background-color: rgb(172, 208, 247);
+  width: 70rem;
+  height: 3rem;
+}
+
+select:focus {
+  background-color: rgb(172, 208, 247);
+  width: 70rem;
+  height: 3rem;
+}
+
+.NoFocus-form {  /*creo clase "NoFocus-form" para eliminar el focus por herencia y aprovecho a personalizar*/
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 
 
 /* aplico responsive designe */
