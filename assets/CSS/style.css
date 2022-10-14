@@ -1,16 +1,17 @@
-/*aplico un reseteador para eliminar espacios no aplicados*/
+/* aplico un reseteador para eliminar espacios no aplicados
 * {
    margin: 0;
    padding: 0; 
 }
 
-/* cambio la medida del REM, para trabajar comodamente con 1rem=10px, dado que un rem quivale a 16px */
+cambio la medida del REM, para trabajar comodamente con 1rem=10px, dado que un rem quivale a 16px
 html {
   font-size: 62, 5%;
 }
 
+/* BODY */
 /*aplico areas y uso html como padre contenedor, además aplico la orden de trabajar con el 100 por ciento de mi pantalla*/
-html body {
+/* html body {
   display: grid;
   grid-template-columns: 5fr;
   grid-template-rows: 1fr 3fr 1fr;
@@ -21,9 +22,8 @@ html body {
 
   width: 100%;
   height: 100vh;
-}
+} */ */
 
-/* BODY */
 
 /*CABECERA*/
 

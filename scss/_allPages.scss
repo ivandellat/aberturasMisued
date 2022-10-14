@@ -1,0 +1,88 @@
+/*aplico un reseteador para eliminar espacios no aplicados*/
+* {
+    margin: 0;
+    padding: 0; 
+ }
+
+ /* cambio la medida del REM, para trabajar comodamente con 1rem=10px, dado que un rem quivale a 16px */
+html {
+    font-size: 62, 5%;
+    /* BODY */
+    /*aplico areas y uso html como padre contenedor, además aplico la orden de trabajar con el 100 por ciento de mi pantalla*/
+    body {
+      display: grid;
+      grid-template-columns: 5fr;
+      grid-template-rows: 1fr 3fr 1fr;
+      grid-template-areas: 
+      "header"
+      "main"
+      "footer" ;
+    
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  /*CABECERA*/
+
+/*cabecera titulo*/
+header {
+    background: radial-gradient(white, rgb(255, 255, 255)); /*pruebo un gradiente bastante sutil para ver como queda*/
+  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;  /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
+    align-items: center;
+  
+    grid-area: header;
+  
+    margin-top: 0,5rem;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+    
+    h1 {
+      color: #002a64c1;
+      font-size: 1.5rem;
+      /*margin-right: 1rem; */
+      font-weight: bold;
+      /*esto es una pseudo estilo de prueba para el titulo*/
+      &:hover {
+        color: rgb(0, 224, 150);
+      }
+    }
+    nav ul {
+      display: flex;
+      flex-flow: row wrap; /*aplico para que el contenido respete el tamaño y separacion de los elementos li del ul poniendolos en dos lineas horizontales por defecto, y asi evitar que me los junte o achique*/
+      justify-content: center;
+      align-items:center;
+      font-weight: bold; /* le doy mayor grosor a la letra */
+      font-size: 1.2rem;
+      list-style-type: none; /* elimino los puntos del menu list */
+    
+      /* margin: 0.3rem 0.3rem; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
+      li {
+        border-color: white;
+        border-left: solid 2px rgb(178, 194, 208); /* de esta manera borro los bordes que no quiero, luego abajo aplico especificidad */
+        border-right: solid 2px rgb(135, 200, 222); /* con estas propiedades jugué con el diseño de bordes en el menu*/
+      
+        display: inline-block; /* convierto mi menu en horizontal y al ser también "block" le sumo propiedades de altura (de bloque), ver propiedad con flex box */
+        margin: 0.5rem auto;
+        padding: 0.5rem 1.5rem;
+        a {
+          color: #ff009d;
+          text-decoration: none; /*le scao el subrayado al texto del menu*/
+          &:hover {
+            color: rgb(3, 137, 137); /*con esta funcion doy color cuando señalo las palabras del menu*/
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
