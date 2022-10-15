@@ -69,3 +69,8 @@ header {
         header nav ul li a:hover {
           color: #038989;
           /*con esta funcion doy color cuando señalo las palabras del menu*/ }
+
+/*main*/
+main {
+  grid-area: main;
+  /*solo lo creo para poder darle funcionamiento al grid para lograr la media queris*/ }

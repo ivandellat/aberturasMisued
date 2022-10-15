@@ -78,6 +78,108 @@ header {
       }
     }
   }
+
+  /*main*/
+
+main {
+  grid-area: main; /*solo lo creo para poder darle funcionamiento al grid para lograr la media queris*/
+}
+
+/*ASIDE*/
+
+aside {
+  background-color: rgba(247, 247, 21, 0.2); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background: linear-gradient(to bottom,rgba(77, 77, 76, 0.6), rgb(255, 255, 255, 0.5));
+
+  width: 10rem;
+  height: 39.5rem;
+
+  position: fixed;
+  right: 0.5rem;
+  top: 3.8rem;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  grid-area: aside;
+  h3 {
+    color: #fbff00;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    text-align: center;
+  
+    padding-top: 0.2rem;
+    &:hover {
+      background-color: #808145;
+      color: white;
+    }
+  ul li ul li a div {
+    color: #000000;
+    font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+    font-size: 1.3rem;
+    font-weight:bold; /*texto mas remarcado*/
+  
+    position: relative; /*especifico que sea la posicion relativa a tener en cuenta para el position absolute del hijo img*/
+    margin-top: 1.6rem;
+    }
+    img {
+      /* con position absolute y display none estoy diciendo que  SE SALE DEL FLUJO NORMAL Y TOMA AL aside div como su 
+      padre porque previamente dijimos que aside div es relative, luego el display none actúa ocultando el contenido, en este caso la imagen */
+      position: absolute;
+      display: none;
+    
+      background-size: cover; /*funciona si solo si tengo un ancho y un alto espicificado en mi padre que contine el elemento imagen y obliga 
+      a mi imagen a cubrir el espacio del padre*/
+      width: 10rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+      height: 12rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+      &:hover img { 
+        display: flex;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* css para el menu desplegable de MERCADO LIBRE */
+
+aside ul {
+  padding-left: 0rem;
+}
+
+aside ul li {
+  display: inline-block;
+  position: relative;
+}
+
+aside ul li ul {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+}
+
+aside ul li:hover ul {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(126, 186, 226); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
+  background: linear-gradient(to bottom,rgba(255, 255, 209, 0.5), rgb(255, 255, 255));
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside p {
+  color: #070706;
+  font-family: "Montserrat", sans-serif;
+}
+
+
   
   
   
