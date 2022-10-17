@@ -1,0 +1,25 @@
+/* css de CONTACTO */
+
+#iframeMap {
+    margin: 4rem 4rem;
+    width: 75rem;
+ }
+ 
+ .secContacto {
+   display: flex;
+   flex-flow: row wrap;
+   .img-contacto {
+     width: 30rem;
+     height: fit-content;
+     margin-left: 2.5rem;
+     padding-top: 1rem;
+    }
+}
+
+.inputMediumObs {
+  width: 45rem;
+}
+ .inputMediumMail {
+   width: 30rem;
+ }
+ 

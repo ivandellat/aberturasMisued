@@ -1,0 +1,92 @@
+/* clases SERVICIO.HTML */
+
+// .mainServicios {  
+//     font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+//     margin: auto 50px;
+//     font-size: 1.2rem;
+//     font-weight: 1000;
+//     font-family: "Montserrat", sans-serif;
+//     line-height: 1.2;
+//     .mainDivServicios {
+//       margin: 50px;
+//       .tituloServicios {
+//         /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+//         margin: 50px 10px;
+//         font-size: 1.2rem;
+//         font-weight: 1000;
+//         font-family: "Montserrat", sans-serif;
+//         line-height: 1.2;
+//         text-align: center;
+//         .mainH2 {
+//           margin: 40px;
+//         }
+//         .mainPServicios {
+//         font-size: 1.2rem;
+//         font-weight: 1000;
+//         font-family: "Montserrat", sans-serif;
+//         line-height: 1.2;
+//         text-align: center;
+//         }
+//       }
+//       .divServicios2 {
+//         background-color: rgb(131, 227, 211)
+//       }
+    
+//       .divServicios1 {
+//         background-color: rgb(158, 177, 227)
+//       }
+//     }
+//   }
+  
+  
+  
+  
+//   .textoColorAzul {
+//     color: blue;
+//   }
+  
+
+/* clases SERVICIO.HTML */
+
+.mainServicios {  
+    font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+    margin: auto 50px;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    .mainDivServicios {
+      margin: 50px;
+        .tituloServicios {
+          /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+          margin: 50px 10px;
+          font-size: 2.2rem;
+          font-weight: 2500; 
+          font-family: "Montserrat", sans-serif;
+          line-height: 1.5;
+          text-align: center;
+        }
+        .mainH2 {
+          margin: 40px;
+          font-weight: 1000;
+        }
+        .mainPservicios {
+          font-size: 1.2rem;
+          font-weight: 2000;
+          font-family: "Montserrat", sans-serif;
+          line-height: 1.2;
+          text-align: center;
+        }
+        .textoColorAzul {
+            color: blue;
+            font-weight: 1000;
+          }
+    }
+    .divServicios2 {
+    background-color: rgb(160, 248, 233)
+    }
+    .divServicios1 {
+        background-color: rgb(185, 202, 247)
+    }
+  }
+  

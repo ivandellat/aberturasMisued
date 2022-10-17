@@ -1,0 +1,39 @@
+/*clases de la PAGE INDEX*/
+
+.mainIndex {
+    background-color: rgb(235, 243, 243); /*utilice el fondo solo para tomar conocimiento del espacio del main*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img1 img2 img4";
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  
+    width: 95rem;
+    height: 40rem;
+    .divIndex1 {
+      background-image: url("/assets/img/ventana\ cocina\ cansino.jpg");
+      background-size: cover;
+      grid-area:img1;
+    }
+    .divIndex2 {
+      background-image: url("/assets/img/escalera_galeria.jpg");
+      background-size: cover;
+      grid-area: img2;
+    }
+    .divIndex3 {
+      background-image: url("/assets/img/paños\ fijos_galeria.jpg");
+      background-size: cover;
+      grid-area: img3
+    }
+    .divIndex4 {
+      background-image: url("/assets/img/vc2_galeria.jpg");
+      background-position:left;
+      background-size: cover;
+      grid-area: img4;
+    }
+  }
+  
+  

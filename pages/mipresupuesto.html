@@ -29,7 +29,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- css tratar de que todo lo relacionado a estilos esté al final de la etiqueta head-->
-    <link rel="stylesheet" href="../assets/CSS/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 
   </head>
 
@@ -65,10 +65,12 @@
       </nav>
     </header>
 
-    <main>
-      <h2 class="tituloFormulario">Mi presupuesto</h2>
-      <form>
-          <label for="nombre">Nombre:</label>
+    <main class="mainMippto">
+      
+      <p class="tituloFormulario">Mi presupuesto</p>
+
+      <form class="formMippto">
+          <label class="letraBlanca" for="nombre">Nombre:</label>
           <input type="text" name="nombre"></input>
 
           <label for="correo">Correo</label>
@@ -86,20 +88,20 @@
           <label for="color">color</label>
           <input type="text" name="color"></input>
 
-          <label for="¿colocación?">¿colocación?</label>
+          <label for="¿colocación?">¿ colocación ?</label>
           <input type="text" name="¿colocación?"></input>
 
-          <h3>más detalles..</h3>
+          <p class="masMippto">más detalles..</p>
           <textarea cols="20" rows="10"></textarea>
 
           <!-- boton para java script -->
           <input type="button" value="para JS">
 
           <!-- boton enviar -->
-        <input type="submit" value="solicitar YA !">
+        <input class="SolicYa" type="submit" value="solicitar YA !">
 
         <!-- boton para limpiar formulario -->
-        <input type="reset" value="limpiar">
+        <input class="limpiar" type="reset" value="limpiar">
 
     </form>
     </main>
@@ -107,7 +109,7 @@
     <aside class="asideGrid">
       <ul>
 
-        <li><h3>Encontrá en Mercado Libre:</h3>
+        <li><h3>En Mercado Libre:</h3>
           
   
           <ul>

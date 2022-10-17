@@ -108,15 +108,16 @@ html {
             h3 {
               color: #fbff00;
               font-size: 1.2rem;
-              font-weight: 1000;
+              font-weight: bolder;
               font-family: "Montserrat", sans-serif;
               line-height: 1.2;
               text-align: center;
               
               padding-top: 0.2rem;
               &:hover {
-                background-color: #808145;
-                color: white;
+                background-color: #fbff00e2;
+                color: rgb(0, 0, 0);
+                font-weight: bolder;
               }
             }
             ul {
@@ -157,81 +158,147 @@ html {
           }
         }
       }
+    
+      footer { /*FOOTER*/
+        background-color: #ffffff;
+        margin-top: 1.5rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+      
+        grid-area: footer;
+        h2 {
+          font-family: "Montserrat", sans-serif;
+          color: #505052f7;
+          font-size: large;
+          font-weight: bold;
+          
+          margin-left: 12rem;
+        }
+        div {
+          display: flex;    /*aplico propiedad para poder aplicar padding a los hijos y separarlos entre sí, además aplico direccion y wrap/responsivo*/
+          flex-flow: column wrap; 
+          a {
+            padding-top: 3.5rem; /*con esta propiedad y gracias que hice flexible al div padre pude aplicarle propiedades box*/
+            padding-left: 1.5rem;
+          }
+        }
+      }
     }
   }
+  
 
-/*FOOTER*/
 
-footer {
-  background-color: #ffffff;
-  margin-top: 1.5rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
 
-  grid-area: footer;
-}
-
-footer h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #505052f7;
-  font-size: large;
-  font-weight: bold;
-
-  margin-left: 12rem;
-}
-
-footer div {
-  display: flex;    /*aplico propiedad para poder aplicar padding a los hijos y separarlos entre sí, además aplico direccion y wrap/responsivo*/
-  flex-flow: column wrap; 
-}
-
-footer div a {
-  padding-top: 3.5rem; /*con esta propiedad y gracias que hice flexible al div padre pude aplicarle propiedades box*/
-  padding-left: 1.5rem;
-}
 
 /*clases del footer*/
 
 .footerGrid {
   width: auto;
   height: 4.62rem;
-
-
-  background-image: url("../img/probar.jpg");
+  
+  
+  background-image: url("/assets/img/icono\ misued\ mas\ chico.jpg");
   background-repeat: no-repeat; /*de esta manera */
-  background-position: center; /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
+  background-position: left; /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
+
+  margin-left: 5rem;
+  .telefonoFooter {
+    margin-left: 20rem;
+  }
+  .redesSociales {  
+    width: 4.2rem;  
+    position: fixed;
+    right: 0.3rem;
+    bottom: 9rem;;
+    .instagram {
+      width: auto;
+      
+      position: fixed;
+      right: 4.7rem;
+      bottom: 7rem;;
+    }
+  }
+  .whatsapp {
+    width: 4.2rem;
+    position: fixed;
+    right: 7.5rem;
+    bottom: 1.35rem;
+  }
 }
 
-.telefonoFooter {
-  margin-left: 20rem;
+/* FORMULARIOS */
+/* en este caso aplico css para FORMULARIO, para aplicar propiedades similares entre el formulario de "contacto" y "MI presupuesto" */
+
+  main form {
+    margin: 0px 40px 20px 40px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 60rem;
+  }
+
+  .tituloFormulario {
+    display: block;
+    margin: 50px;
+  }
+
+  .inputMediumMail {
+    width: 10rem;
+  }
+  
+  .formPadding {
+    padding-top: 1.5rem;
+    background-color: aliceblue;
+  }
+
+/*aplico pseudoclases en las pages*/
+
+a:link {
+  text-decoration: none;
+  color: cornflowerblue;
 }
 
-.redesSociales {
-
-  width: 4.2rem;
-
-  position: fixed;
-  right: 0.3rem;
-  bottom: 9rem;;
+a:active {
+  background-color: aqua;
+  color: #fbff00;
 }
 
-.instagram {
-  width: auto;
-
-  position: fixed;
-  right: 4.7rem;
-  bottom: 7rem;;
+input:focus {
+  background-color: rgb(172, 208, 247);
+  width: 70rem;
+  height: 3rem;
+  color: #000000;
+  font-weight: bolder;
 }
 
-.whatsapp {
-  width: 4.2rem;
-  position: fixed;
-  right: 7.5rem;
-  bottom: 1.35rem;
+textarea:focus {
+  background-color: rgb(172, 208, 247);
+  width: 70rem;
+  height: 15rem;
+  color: #000000;
+  font-weight: bolder;
 }
 
+select:focus {
+  background-color: rgb(172, 208, 247);
+  width: 70rem;
+  height: 3rem;
+}
+
+.NoFocus-form {  /*creo clase "NoFocus-form" para eliminar el focus por herencia y aprovecho a personalizar*/
+  width: 1.2rem;
+  height: 1.2rem;
+}
+  
+/* aplico responsive designe */
+
+  
+  
+  
+  
+  
+  
   
   
   

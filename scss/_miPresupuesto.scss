@@ -1,0 +1,44 @@
+.mainMippto{
+    background-image: url("../assets/img/varios3_galeria.jpg");
+    background-size: cover;
+    .tituloFormulario {
+        font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+        font-size: 1.6rem;
+        font-weight: 800;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.2;
+        margin-left: 20rem;
+    }
+    .formMippto {
+        font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+        font-size: 1.2rem;
+        font-weight: 800;
+        line-height: 1.4;
+        input {
+            padding-top: 0.3rem;
+            margin-bottom: 1rem;
+        }
+        label {
+            font-weight:bolder;
+            color:rgb(255, 255, 255);
+            background-color: rgba(18, 137, 188, 0.5);
+        }
+        .SolicYa {
+            background-color: rgb(20, 177, 125);
+            color: rgb(255, 255, 255);
+            font-weight: 800;
+            font-family: "Montserrat", sans-serif;
+        }
+        .limpiar {
+            background-color: rgb(182, 172, 172);
+            color: rgb(255, 255, 255);
+            font-weight: 800;
+            font-family: "Montserrat", sans-serif;
+        }
+        .masMippto {
+            font-weight: 800;
+            color:rgb(255, 255, 255);
+            background-color: rgba(18, 137, 188, 0.5);
+        }
+    }
+}
