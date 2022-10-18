@@ -8,6 +8,7 @@
  .secContacto {
    display: flex;
    flex-flow: row wrap;
+   background-image:linear-gradient(to right, white, rgb(106, 205, 248)) ;
    .img-contacto {
      width: 30rem;
      height: fit-content;
@@ -22,4 +23,6 @@
  .inputMediumMail {
    width: 30rem;
  }
- 
+ .tituloFormulario {
+  margin-left: 12rem;
+ }

@@ -11,7 +11,7 @@ html {
   /*aplico areas y uso html como padre contenedor, además aplico la orden de trabajar con el 100 por ciento de mi pantalla*/ }
   html body {
     display: grid;
-    grid-template-columns: 5fr;
+    grid-template-columns: 4fr;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: "header" "main" "footer";
     width: 100%;
@@ -26,8 +26,9 @@ html {
       /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
       align-items: center;
       grid-area: header;
-      margin-top: 0,5rem;
-      font-size: 1.3rem;
+      height: 5rem;
+      margin: 1rem, 0.5rem;
+      font-size: 1.2rem;
       font-family: "Montserrat", sans-serif;
       /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/ }
       html body header h1 {
@@ -46,7 +47,7 @@ html {
         align-items: center;
         font-weight: bold;
         /* le doy mayor grosor a la letra */
-        font-size: 1.2rem;
+        font-size: 1rem;
         list-style-type: none;
         /* elimino los puntos del menu list */
         /* margin: 0.3rem 0.3rem; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */ }
@@ -276,8 +277,6 @@ select:focus {
     background-size: cover;
     grid-area: img4; }
 
-/* clases SERVICIO.HTML */
-/* clases SERVICIO.HTML */
 .mainServicios {
   font-family: "Montserrat", sans-serif;
   /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
@@ -285,33 +284,39 @@ select:focus {
   font-size: 1.2rem;
   font-weight: 1000;
   font-family: "Montserrat", sans-serif;
-  line-height: 1.2; }
-  .mainServicios .mainDivServicios {
-    margin: 50px; }
-    .mainServicios .mainDivServicios .tituloServicios {
-      /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
-      margin: 50px 10px;
-      font-size: 2.2rem;
-      font-weight: 2500;
-      font-family: "Montserrat", sans-serif;
-      line-height: 1.5;
-      text-align: center; }
-    .mainServicios .mainDivServicios .mainH2 {
-      margin: 40px;
-      font-weight: 1000; }
-    .mainServicios .mainDivServicios .mainPservicios {
-      font-size: 1.2rem;
-      font-weight: 2000;
-      font-family: "Montserrat", sans-serif;
-      line-height: 1.2;
-      text-align: center; }
-    .mainServicios .mainDivServicios .textoColorAzul {
-      color: blue;
-      font-weight: 1000; }
+  line-height: 1.2;
+  height: 65rem;
+  background-image: url("/assets/img/camion misued.jpg");
+  background-repeat: no-repeat;
+  background-size: auto; }
+  .mainServicios .mainDivServicios .tituloServicios {
+    /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+    margin: 5rem 1rem;
+    margin-left: 10rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    text-align: start; }
+  .mainServicios .mainDivServicios .mainH2 {
+    margin: 40px;
+    font-weight: 1000; }
+  .mainServicios .mainDivServicios .mainPservicios {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    text-align: center; }
+  .mainServicios .mainDivServicios .textoColorAzul {
+    color: blue;
+    font-weight: 1000; }
   .mainServicios .divServicios2 {
-    background-color: #a0f8e9; }
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8rem;
+    padding: auto, 1rem; }
   .mainServicios .divServicios1 {
-    background-color: #b9caf7; }
+    background-color: rgba(210, 217, 235, 0.8);
+    margin-bottom: 8rem; }
 
 .mainMippto {
   background-image: url("../assets/img/varios3_galeria.jpg");
@@ -385,7 +390,8 @@ select:focus {
 
 .secContacto {
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  background-image: linear-gradient(to right, white, #6acdf8); }
   .secContacto .img-contacto {
     width: 30rem;
     height: fit-content;
@@ -397,3 +403,6 @@ select:focus {
 
 .inputMediumMail {
   width: 30rem; }
+
+.tituloFormulario {
+  margin-left: 12rem; }
