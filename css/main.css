@@ -33,6 +33,7 @@ html {
       /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/ }
       html body header h1 {
         color: #002a64c1;
+        margin-right: 0.2rem;
         font-size: 1.5rem;
         /*margin-right: 1rem; */
         font-weight: bold;
