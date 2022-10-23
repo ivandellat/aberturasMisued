@@ -201,7 +201,7 @@ html {
   height: 4.62rem;
   
   
-  background-image: url("/assets/img/icono\ misued\ mas\ chico.jpg");
+  background-image: url("../assets/img/icono\ misued\ mas\ chico.jpg");
   background-repeat: no-repeat; /*de esta manera */
   background-position: left; /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
 
@@ -295,8 +295,14 @@ select:focus {
   
 /* aplico responsive designe */
 
+.otacu {
+  color:rgb(0, 224, 150)
+}
   
-  
+
+.dasd {
+  color:#ff009d;
+}
   
   
   

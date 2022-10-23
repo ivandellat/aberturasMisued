@@ -171,7 +171,7 @@ html {
 .footerGrid {
   width: auto;
   height: 4.62rem;
-  background-image: url("/assets/img/icono misued mas chico.jpg");
+  background-image: url("../assets/img/icono misued mas chico.jpg");
   background-repeat: no-repeat;
   /*de esta manera */
   background-position: left;
@@ -248,6 +248,12 @@ select:focus {
   height: 1.2rem; }
 
 /* aplico responsive designe */
+.otacu {
+  color: #00e096; }
+
+.dasd {
+  color: #ff009d; }
+
 /*clases de la PAGE INDEX*/
 .mainIndex {
   background-color: #ebf3f3;
@@ -261,19 +267,19 @@ select:focus {
   width: 95rem;
   height: 40rem; }
   .mainIndex .divIndex1 {
-    background-image: url("/assets/img/ventana cocina cansino.jpg");
+    background-image: url("../assets/img/ventana cocina cansino.jpg");
     background-size: cover;
     grid-area: img1; }
   .mainIndex .divIndex2 {
-    background-image: url("/assets/img/escalera_galeria.jpg");
+    background-image: url("../assets/img/escalera_galeria.jpg");
     background-size: cover;
     grid-area: img2; }
   .mainIndex .divIndex3 {
-    background-image: url("/assets/img/paños fijos_galeria.jpg");
+    background-image: url("../assets/img/paños fijos_galeria.jpg");
     background-size: cover;
     grid-area: img3; }
   .mainIndex .divIndex4 {
-    background-image: url("/assets/img/vc2_galeria.jpg");
+    background-image: url("../assets/img/vc2_galeria.jpg");
     background-position: left;
     background-size: cover;
     grid-area: img4; }
@@ -287,7 +293,7 @@ select:focus {
   font-family: "Montserrat", sans-serif;
   line-height: 1.2;
   height: 65rem;
-  background-image: url("/assets/img/camion misued.jpg");
+  background-image: url("../assets/img/camion misued.jpg");
   background-repeat: no-repeat;
   background-size: auto; }
   .mainServicios .mainDivServicios .tituloServicios {
