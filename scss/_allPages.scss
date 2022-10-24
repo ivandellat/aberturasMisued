@@ -22,7 +22,7 @@ html {
       height: 100vh;
       
       header { /*CABECERA*/
-          background: radial-gradient(white, rgb(255, 255, 255)); /*pruebo un gradiente bastante sutil para ver como queda*/
+          background: radial-gradient(white, rgb(250, 251, 253)); /*pruebo un gradiente bastante sutil para ver como queda*/
         
           display: flex;
           flex-flow: row wrap;
@@ -79,6 +79,7 @@ html {
       
       main { /*MAIN*/
         grid-area: main; /*solo lo creo para poder darle funcionamiento al grid para lograr la media queris*/
+        width: 120rem;
       }
       
       aside { /*ASIDE*/
@@ -160,16 +161,21 @@ html {
           }
         }
       }
-    
+      
       footer { /*FOOTER*/
+        
+        grid-area: footer;
+
         background-color: #ffffff;
-        margin-top: 1.5rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+
+        margin-top: 1.5rem;
+        width: 120rem;
+
+        align-items: center;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
-      
-        grid-area: footer;
+        
         h2 {
           font-family: "Montserrat", sans-serif;
           color: #505052f7;
