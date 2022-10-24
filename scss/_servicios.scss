@@ -1,14 +1,13 @@
 
 .mainServicios {
     font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-    margin: auto 50px;
-    font-size: 1.2rem;
+    margin: auto 4rem;
+    font-size: 1.9rem;
     font-weight: 1000;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.2;
+    line-height: 3rem;
 
-
-    height: 65rem;
+    height: 102rem;
 
     background-image: url("../assets/img/camion\ misued.jpg");
     background-repeat: no-repeat;
@@ -18,23 +17,23 @@
     .mainDivServicios {
         .tituloServicios {
           /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
-          margin: 5rem 1rem;
-          margin-left: 10rem;
-          font-size: 2.2rem;
+          margin: 8rem 1.6rem;
+          margin-left: 16rem;
+          font-size: 3.5rem;
           font-weight: bolder;
           font-family: "Montserrat", sans-serif;
-          line-height: 1.5;
+          line-height: 2.4rem;
           text-align:start;
         }
         .mainH2 {
-          margin: 40px;
-          font-weight: 1000;
+          margin: 5rem;
+          font-weight: 100rem;
         }
         .mainPservicios {
-          font-size: 1.2rem;
+          font-size: 1.9rem;
           font-weight: bolder;
           font-family: "Montserrat", sans-serif;
-          line-height: 1.2;
+          line-height: 1.9rem;
           text-align: center;
         }
         .textoColorAzul {
@@ -44,12 +43,12 @@
     }
     .divServicios2 {
     background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 8rem;
-    padding: auto, 1rem;
+    margin-bottom: 12.8rem;
+    padding: auto, 1.6rem;
     }
     .divServicios1 {
     background-color: rgba(210, 217, 235, 0.8);
-    margin-bottom: 8rem;
+    margin-bottom: 12.8rem;
     }
   }
 

@@ -6,7 +6,7 @@
 
 /* cambio la medida del REM, para trabajar comodamente con 1rem=10px, dado que un rem quivale a 16px */
 html {
-  font-size: 62, 5%;
+  font-size: 62.5%;
   /* BODY */
   /*aplico areas y uso html como padre contenedor, además aplico la orden de trabajar con el 100 por ciento de mi pantalla*/ }
   html body {
@@ -26,16 +26,13 @@ html {
       /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
       align-items: center;
       grid-area: header;
-      height: 5rem;
-      width: 120rem;
-      margin: 1rem, 0.5rem;
-      font-size: 1.2rem;
+      height: fit-content;
       font-family: "Montserrat", sans-serif;
       /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/ }
       html body header h1 {
         color: #002a64c1;
-        margin-right: 0.2rem;
-        font-size: 1.5rem;
+        margin-right: 0.4rem;
+        font-size: 1.8rem;
         /*margin-right: 1rem; */
         font-weight: bold;
         /*esto es una pseudo estilo de prueba para el titulo*/ }
@@ -49,7 +46,7 @@ html {
         align-items: center;
         font-weight: bold;
         /* le doy mayor grosor a la letra */
-        font-size: 1rem;
+        font-size: 1.7rem;
         list-style-type: none;
         /* elimino los puntos del menu list */
         /* margin: 0.3rem 0.3rem; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */ }
@@ -61,8 +58,8 @@ html {
           /* con estas propiedades jugué con el diseño de bordes en el menu*/
           display: inline-block;
           /* convierto mi menu en horizontal y al ser también "block" le sumo propiedades de altura (de bloque), ver propiedad con flex box */
-          margin: 0.5rem auto;
-          padding: 0.5rem 1.5rem; }
+          margin: 0.7rem auto;
+          padding: 0.7rem 2.4rem; }
           html body header nav ul li a {
             color: #ff009d;
             text-decoration: none;
@@ -73,18 +70,17 @@ html {
     html body main {
       /*MAIN*/
       grid-area: main;
-      /*solo lo creo para poder darle funcionamiento al grid para lograr la media queris*/
-      width: 120rem; }
+      /*solo lo creo para poder darle funcionamiento al grid para lograr la media queris*/ }
     html body aside {
       /*ASIDE*/
       background-color: rgba(247, 247, 21, 0.2);
       /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
       background: linear-gradient(to bottom, rgba(77, 77, 76, 0.6), rgba(255, 255, 255, 0.5));
-      width: 10rem;
-      height: 39.5rem;
+      width: 16rem;
+      height: 65.4rem;
       position: fixed;
-      right: 0.5rem;
-      top: 3.8rem;
+      right: 0.7rem;
+      top: 6.1rem;
       display: flex;
       flex-flow: column wrap;
       grid-area: aside; }
@@ -101,12 +97,12 @@ html {
             background: linear-gradient(to bottom, rgba(255, 255, 209, 0.5), white); }
           html body aside ul li h3 {
             color: #fbff00;
-            font-size: 1.2rem;
+            font-size: 1.9rem;
             font-weight: bolder;
             font-family: "Montserrat", sans-serif;
-            line-height: 1.2;
+            line-height: 1.9;
             text-align: center;
-            padding-top: 0.2rem; }
+            padding-top: 0.3rem; }
             html body aside ul li h3:hover {
               background-color: #fbff00e2;
               color: black;
@@ -121,12 +117,12 @@ html {
                 color: #000000;
                 font-family: "Montserrat", sans-serif;
                 /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-                font-size: 1.3rem;
+                font-size: 2.1rem;
                 font-weight: bold;
                 /*texto mas remarcado*/
                 position: relative;
                 /*especifico que sea la posicion relativa a tener en cuenta para el position absolute del hijo img*/
-                margin-top: 1.6rem; }
+                margin-top: 2.6rem; }
                 html body aside ul li ul a div:hover img {
                   display: flex; }
                 html body aside ul li ul a div img {
@@ -137,9 +133,9 @@ html {
                   background-size: cover;
                   /*funciona si solo si tengo un ancho y un alto espicificado en mi padre que contine el elemento imagen y obliga 
                     a mi imagen a cubrir el espacio del padre*/
-                  width: 10rem;
+                  width: 16rem;
                   /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
-                  height: 12rem;
+                  height: 19rem;
                   /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/ }
                 html body aside ul li ul a div p {
                   color: #070706;
@@ -148,8 +144,9 @@ html {
       /*FOOTER*/
       grid-area: footer;
       background-color: #ffffff;
-      margin-top: 1.5rem;
-      width: 120rem;
+      margin-top: auto;
+      margin-bottom: 0.7rem;
+      height: fit-content;
       align-items: center;
       display: flex;
       flex-flow: row wrap;
@@ -159,7 +156,7 @@ html {
         color: #505052f7;
         font-size: large;
         font-weight: bold;
-        margin-left: 12rem; }
+        margin-left: 8rem; }
       html body footer div {
         display: flex;
         /*aplico propiedad para poder aplicar padding a los hijos y separarlos entre sí, además aplico direccion y wrap/responsivo*/
@@ -167,35 +164,36 @@ html {
         html body footer div a {
           padding-top: 3.5rem;
           /*con esta propiedad y gracias que hice flexible al div padre pude aplicarle propiedades box*/
-          padding-left: 1.5rem; }
+          padding-left: 2.4rem; }
 
 /*clases del footer*/
 .footerGrid {
   width: auto;
-  height: 4.62rem;
+  height: 8rem;
   background-image: url("../assets/img/icono misued mas chico.jpg");
   background-repeat: no-repeat;
   /*de esta manera */
   background-position: left;
   /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
-  margin-left: 5rem; }
+  margin-left: 8rem;
+  margin-top: 0 rem; }
   .footerGrid .telefonoFooter {
-    margin-left: 20rem; }
+    margin-left: 32rem; }
   .footerGrid .redesSociales {
-    width: 4.2rem;
+    width: 6.3rem;
     position: fixed;
-    right: 0.3rem;
-    bottom: 9rem; }
+    right: 0.5rem;
+    bottom: 13rem; }
     .footerGrid .redesSociales .instagram {
       width: auto;
       position: fixed;
-      right: 4.7rem;
-      bottom: 7rem; }
+      right: 7rem;
+      bottom: 9.5rem; }
   .footerGrid .whatsapp {
     width: 4.2rem;
     position: fixed;
-    right: 7.5rem;
-    bottom: 1.35rem; }
+    right: 14rem;
+    bottom: 2.2rem; }
 
 /* FORMULARIOS */
 /* en este caso aplico css para FORMULARIO, para aplicar propiedades similares entre el formulario de "contacto" y "MI presupuesto" */
@@ -203,17 +201,17 @@ main form {
   margin: 0px 40px 20px 40px;
   display: flex;
   flex-flow: column wrap;
-  width: 60rem; }
+  width: 85rem; }
 
 .tituloFormulario {
   display: block;
-  margin: 50px; }
+  margin: 5rem; }
 
 .inputMediumMail {
-  width: 10rem; }
+  width: 16rem; }
 
 .formPadding {
-  padding-top: 1.5rem;
+  padding-top: 3.8rem;
   background-color: aliceblue; }
 
 /*aplico pseudoclases en las pages*/
@@ -227,35 +225,29 @@ a:active {
 
 input:focus {
   background-color: #acd0f7;
-  width: 70rem;
-  height: 3rem;
+  width: 112rem;
+  height: 4.8rem;
   color: #000000;
   font-weight: bolder; }
 
 textarea:focus {
   background-color: #acd0f7;
-  width: 70rem;
-  height: 15rem;
+  width: 112rem;
+  height: 24rem;
   color: #000000;
   font-weight: bolder; }
 
 select:focus {
   background-color: #acd0f7;
-  width: 70rem;
-  height: 3rem; }
+  width: 112rem;
+  height: 4.8rem; }
 
 .NoFocus-form {
   /*creo clase "NoFocus-form" para eliminar el focus por herencia y aprovecho a personalizar*/
-  width: 1.2rem;
-  height: 1.2rem; }
+  width: 1.9rem;
+  height: 1.9rem; }
 
 /* aplico responsive designe */
-.otacu {
-  color: #00e096; }
-
-.dasd {
-  color: #ff009d; }
-
 /*clases de la PAGE INDEX*/
 .mainIndex {
   background-color: #ebf3f3;
@@ -288,43 +280,43 @@ select:focus {
 .mainServicios {
   font-family: "Montserrat", sans-serif;
   /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-  margin: auto 50px;
-  font-size: 1.2rem;
+  margin: auto 4rem;
+  font-size: 1.9rem;
   font-weight: 1000;
   font-family: "Montserrat", sans-serif;
-  line-height: 1.2;
-  height: 65rem;
+  line-height: 3rem;
+  height: 102rem;
   background-image: url("../assets/img/camion misued.jpg");
   background-repeat: no-repeat;
   background-size: auto; }
   .mainServicios .mainDivServicios .tituloServicios {
     /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
-    margin: 5rem 1rem;
-    margin-left: 10rem;
-    font-size: 2.2rem;
+    margin: 8rem 1.6rem;
+    margin-left: 16rem;
+    font-size: 3.5rem;
     font-weight: bolder;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.5;
+    line-height: 2.4rem;
     text-align: start; }
   .mainServicios .mainDivServicios .mainH2 {
-    margin: 40px;
-    font-weight: 1000; }
+    margin: 5rem;
+    font-weight: 100rem; }
   .mainServicios .mainDivServicios .mainPservicios {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     font-weight: bolder;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.2;
+    line-height: 1.9rem;
     text-align: center; }
   .mainServicios .mainDivServicios .textoColorAzul {
     color: blue;
     font-weight: 1000; }
   .mainServicios .divServicios2 {
     background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 8rem;
-    padding: auto, 1rem; }
+    margin-bottom: 12.8rem;
+    padding: auto, 1.6rem; }
   .mainServicios .divServicios1 {
     background-color: rgba(210, 217, 235, 0.8);
-    margin-bottom: 8rem; }
+    margin-bottom: 12.8rem; }
 
 .mainMippto {
   background-image: url("../assets/img/varios3_galeria.jpg");
@@ -332,20 +324,20 @@ select:focus {
   .mainMippto .tituloFormulario {
     font-family: "Montserrat", sans-serif;
     /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-    font-size: 1.6rem;
+    font-size: 3.6rem;
     font-weight: 800;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.2;
+    line-height: 1.9rem;
     margin-left: 20rem; }
   .mainMippto .formMippto {
     font-family: "Montserrat", sans-serif;
     /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     font-weight: 800;
     line-height: 1.4; }
     .mainMippto .formMippto input {
-      padding-top: 0.3rem;
-      margin-bottom: 1rem; }
+      padding-top: 0.5rem;
+      margin-bottom: 1.6rem; }
     .mainMippto .formMippto label {
       font-weight: bolder;
       color: white;
@@ -367,9 +359,9 @@ select:focus {
 
 /* css de Deseos de clientes */
 .galeria {
-  width: 60rem;
+  width: 96rem;
   height: min-content;
-  margin-left: 15rem; }
+  margin-left: 24rem; }
   .galeria .carousel-item {
     background-size: contain; }
     .galeria .carousel-item .textCarousel {
@@ -377,7 +369,7 @@ select:focus {
       color: #fefeff;
       font-family: "Montserrat", sans-serif;
       /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-      font-size: 1.8rem;
+      font-size: 2.9rem;
       /* margin-right: 1rem; */
       font-weight: bolder;
       text-align: left; }
@@ -386,31 +378,38 @@ select:focus {
       color: #fefeff;
       font-family: "Montserrat", sans-serif;
       /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-      font-size: 1.8rem;
+      font-size: 2.9rem;
       /* margin-right: 1rem; */
       font-weight: bolder;
       text-align: left; }
 
 /* css de CONTACTO */
 #iframeMap {
-  margin: 4rem 4rem;
-  width: 75rem; }
+  margin: 6.4rem 6.4rem;
+  width: 120rem; }
 
 .secContacto {
   display: flex;
   flex-flow: row wrap;
   background-image: linear-gradient(to right, white, #6acdf8); }
   .secContacto .img-contacto {
-    width: 30rem;
+    width: 48rem;
     height: fit-content;
-    margin-left: 2.5rem;
-    padding-top: 1rem; }
+    margin-left: 11rem;
+    padding-top: 1.6rem; }
+
+main article form {
+  font-family: "Montserrat", sans-serif;
+  /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.4; }
 
 .inputMediumObs {
-  width: 45rem; }
+  width: 72rem; }
 
 .inputMediumMail {
-  width: 30rem; }
+  width: 48rem; }
 
 .tituloFormulario {
-  margin-left: 12rem; }
+  margin-left: 19.2rem; }

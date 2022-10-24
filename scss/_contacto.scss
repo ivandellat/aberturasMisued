@@ -1,8 +1,8 @@
 /* css de CONTACTO */
 
 #iframeMap {
-    margin: 4rem 4rem;
-    width: 75rem;
+    margin: 6.4rem 6.4rem;
+    width: 120rem;
  }
  
  .secContacto {
@@ -10,19 +10,25 @@
    flex-flow: row wrap;
    background-image:linear-gradient(to right, white, rgb(106, 205, 248)) ;
    .img-contacto {
-     width: 30rem;
+     width: 48rem;
      height: fit-content;
-     margin-left: 2.5rem;
-     padding-top: 1rem;
+     margin-left: 11rem;
+     padding-top: 1.6rem;
     }
-}
+  }
+  main article form{
+    font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.4;
+  }
 
 .inputMediumObs {
-  width: 45rem;
+  width: 72rem;
 }
  .inputMediumMail {
-   width: 30rem;
+   width: 48rem;
  }
  .tituloFormulario {
-  margin-left: 12rem;
+  margin-left: 19.2rem;
  }
