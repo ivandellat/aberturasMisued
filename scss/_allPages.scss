@@ -31,6 +31,7 @@ html {
         
           grid-area: header;
           height: 5rem;
+          width: 120rem;
         
           margin: 1rem, 0.5rem;
           font-size: 1.2rem;
@@ -175,7 +176,7 @@ html {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        
+
         h2 {
           font-family: "Montserrat", sans-serif;
           color: #505052f7;
