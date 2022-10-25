@@ -177,8 +177,6 @@ html {
   /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
   margin-left: 8rem;
   margin-top: 0 rem; }
-  .footerGrid .telefonoFooter {
-    margin-left: 32rem; }
   .footerGrid .redesSociales {
     width: 6.3rem;
     position: fixed;
@@ -413,3 +411,9 @@ main article form {
 
 .tituloFormulario {
   margin-left: 19.2rem; }
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-flow: column wrap; }
+  .telefonoFooter {
+    margin: auto 10rem; } }
