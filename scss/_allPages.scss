@@ -11,9 +11,9 @@ html {
     /*aplico areas y uso html como padre contenedor, además aplico la orden de trabajar con el 100 por ciento de mi pantalla*/
     body {
       display: grid;
-      grid-template-columns: 4fr;
-      grid-template-rows: 1fr 3fr 1fr;
-      grid-template-areas: 
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 5fr 0.5fr;
+      grid-template-areas:  
       "header"
       "main"
       "footer";
@@ -81,22 +81,24 @@ html {
         // width: $anchoRP;
       }
       
-      aside { /*ASIDE*/
-        background-color: rgba(247, 247, 21, 0.2); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
-        background: linear-gradient(to bottom,rgba(77, 77, 76, 0.6), rgba(255, 255, 255, 0.5));
-      
+      aside {
+        /*ASIDE*/background-color: rgba(247, 247, 21, 0.2);
+        /*estoydandotransparenciaalcoloragregandolaintensidaddetransparencia0.3*/background: linear-gradient(to bottom,rgba(77, 77, 76, 0.6), rgba(255, 255, 255, 0.5));
         width: 16rem;
         height: 65.4rem;
-      
         position: fixed;
         right: 0.7rem;
         top: 6.1rem;
-      
         display: flex;
         flex-flow: column wrap;
-      
         grid-area: aside;
-        ul {
+        border-radius: 20px ;
+        -webkit-border-radius: 20px ;
+        -moz-border-radius: 20px ;
+        -ms-border-radius: 20px ;
+        -o-border-radius: 20px ;
+        ul
+{
           padding-left: 0rem;
           li {
             display: inline-block;
@@ -106,6 +108,11 @@ html {
               flex-flow: column wrap;
               background-color: rgb(126, 186, 226); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
               background: linear-gradient(to bottom,rgba(255, 255, 209, 0.5), rgb(255, 255, 255));
+              border-radius: 20px ;
+              -webkit-border-radius: 20px ;
+              -moz-border-radius: 20px ;
+              -ms-border-radius: 20px ;
+              -o-border-radius: 20px ;
             }
             h3 {
               color: #fbff00;
@@ -120,6 +127,11 @@ html {
                 background-color: #fbff00e2;
                 color: rgb(0, 0, 0);
                 font-weight: bolder;
+                border-radius: 20px ;
+                -webkit-border-radius: 20px ;
+                -moz-border-radius: 20px ;
+                -ms-border-radius: 20px ;
+                -o-border-radius: 20px ;
               }
             }
             ul {
@@ -199,7 +211,7 @@ html {
   
 
 
-
+  
 
 /*clases del footer*/
 
@@ -213,10 +225,6 @@ html {
   background-position: left; /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
 
   margin-left: 8rem;
-  margin-top: 0 rem;
-  .telefonoFooter {
-    
-  }
   .redesSociales {  
     width: 6.3rem;  
     position: fixed;
@@ -301,7 +309,7 @@ select:focus {
   height: 1.9rem;
 }
   
-/* aplico responsive designe */
+
 
   
   
