@@ -293,43 +293,57 @@ select:focus {
 .mainServicios {
   font-family: "Montserrat", sans-serif;
   /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-  margin: auto 4rem;
-  font-size: 1.9rem;
-  font-weight: 1000;
+  font-size: 2.5rem;
+  font-weight: 800;
   font-family: "Montserrat", sans-serif;
   line-height: 3rem;
+  margin: auto 4rem;
   height: 102rem;
+  width: auto;
   background-image: url("../assets/img/camion misued.jpg");
   background-repeat: no-repeat;
-  background-size: auto; }
-  .mainServicios .mainDivServicios .tituloServicios {
-    /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
-    margin: 8rem 1.6rem;
-    margin-left: 16rem;
-    font-size: 3.5rem;
-    font-weight: bolder;
-    font-family: "Montserrat", sans-serif;
-    line-height: 2.4rem;
-    text-align: start; }
-  .mainServicios .mainDivServicios .mainH2 {
-    margin: 5rem;
-    font-weight: 100rem; }
-  .mainServicios .mainDivServicios .mainPservicios {
-    font-size: 1.9rem;
-    font-weight: bolder;
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.9rem;
-    text-align: center; }
-  .mainServicios .mainDivServicios .textoColorAzul {
-    color: blue;
-    font-weight: 1000; }
+  background-size: cover; }
+  .mainServicios .mainDivServicios {
+    color: #000000ef;
+    width: 130rem;
+    border-top: 0.5rem;
+    border-bottom: 0.4rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start; }
+    .mainServicios .mainDivServicios .tituloServicios {
+      /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+      margin: 4rem 1.6rem;
+      margin-left: 16rem;
+      font-size: 5rem;
+      font-weight: 1000;
+      font-family: "Montserrat", sans-serif;
+      line-height: 2.4rem;
+      text-align: start;
+      color: #030c08ef; }
+    .mainServicios .mainDivServicios .mainH2 {
+      margin-top: 4rem;
+      margin-bottom: 0.2rem;
+      font-weight: 1000;
+      padding-top: 0.3rem;
+      font-size: 2.5rem; }
+    .mainServicios .mainDivServicios .textoColorAzul {
+      color: blue;
+      font-weight: 1000; }
+    .mainServicios .mainDivServicios .fondoTextoServicios {
+      background-color: #ffffff;
+      padding: 0.3rem;
+      line-height: 2.5rem; }
+  .mainServicios .divServicios1 {
+    background-color: #d2e9f46f;
+    margin-bottom: 12.8rem; }
   .mainServicios .divServicios2 {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #d2e9f469;
     margin-bottom: 12.8rem;
     padding: auto, 1.6rem; }
-  .mainServicios .divServicios1 {
-    background-color: rgba(210, 217, 235, 0.8);
-    margin-bottom: 12.8rem; }
+  .mainServicios .fw-bolder {
+    font-weight: bolder !important;
+    padding-bottom: 3rem; }
 
 .mainMippto {
   background-image: url("../assets/img/varios3_galeria.jpg");
@@ -378,8 +392,8 @@ select:focus {
   .galeria .carousel-item {
     background-size: contain; }
     .galeria .carousel-item .textCarousel {
-      background-color: rgba(104, 105, 105, 0.3);
-      color: #fefeff;
+      background-color: #024b3880;
+      color: #FFFFFF;
       font-family: "Montserrat", sans-serif;
       /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
       font-size: 2.9rem;
@@ -387,8 +401,8 @@ select:focus {
       font-weight: bolder;
       text-align: left; }
     .galeria .carousel-item .textCarousel2 {
-      background-color: rgba(104, 105, 105, 0.3);
-      color: #fefeff;
+      background-color: #024b3880;
+      color: #FFFFFF;
       font-family: "Montserrat", sans-serif;
       /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
       font-size: 2.9rem;
@@ -406,26 +420,33 @@ select:focus {
   flex-flow: row wrap;
   background-image: linear-gradient(to right, white, #6acdf8); }
   .secContacto .img-contacto {
-    width: 48rem;
+    width: 38rem;
     height: max-content;
     margin-left: 11rem;
     padding-top: 1.6rem; }
-
-main article form {
-  font-family: "Montserrat", sans-serif;
-  /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-  font-size: 1.9rem;
-  font-weight: 800;
-  line-height: 1.4; }
+  .secContacto .formContacto {
+    font-family: "Montserrat", sans-serif;
+    /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.4;
+    padding-top: 10rem; }
+    .secContacto .formContacto .formPaddingPasame {
+      padding: 3.8rem;
+      align-self: center;
+      color: #ffffff;
+      font-weight: bolder;
+      background-color: #089b7480; }
+  .secContacto .tituloFormulario {
+    margin-left: 19.2rem;
+    font-size: 8rem;
+    color: gray; }
 
 .inputMediumObs {
   width: 72rem; }
 
 .inputMediumMail {
   width: 48rem; }
-
-.tituloFormulario {
-  margin-left: 19.2rem; }
 
 @media screen and (max-width: 768px) {
   .headerGrid {
@@ -516,6 +537,142 @@ main article form {
     background-size: cover;
     height: fit-content;
     width: auto; }
+    .mainServicios .mainDivServicios .tituloServicios {
+      /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+      margin: 9rem 2.3rem 2.2rem 1rem;
+      margin-left: 10.5rem;
+      -webkit-transform: rotate(-353deg);
+      -moz-transform: rotate(-353deg);
+      -ms-transform: rotate(-353deg);
+      -o-transform: rotate(-353deg);
+      transform: rotate(-353deg);
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%; }
+    .mainServicios .mainDivServicios .mainH2 {
+      margin: 6rem;
+      padding-top: 0.7rem;
+      margin-bottom: 3rem;
+      font-weight: 60rem; }
+    .mainServicios .mainDivServicios .mainPservicios {
+      font-size: 1.9rem;
+      font-weight: bolder; }
+  .galeria {
+    width: 66rem;
+    height: fit-content;
+    margin-left: 5rem; }
+    .galeria .carousel-item .textCarousel {
+      font-size: 2rem; }
+    .galeria .carousel-item .textCarousel2 {
+      font-size: 2rem; }
+  #iframeMap {
+    margin: 3rem 5rem;
+    width: 58rem; }
+  .secContacto {
+    flex-flow: column wrap;
+    background-image: linear-gradient(to right, white, rgba(106, 205, 248, 0.4)); }
+    .secContacto .img-contacto {
+      width: 48rem;
+      margin-left: 9rem; }
+  main article form {
+    font-family: "Montserrat", sans-serif;
+    /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+    font-size: 1.7rem; }
+  .inputMediumObs {
+    width: 62rem;
+    font-weight: 500; } }
+
+@media screen and (max-width: 500px) {
+  .headerGrid {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
+    align-items: center;
+    padding: 0rem; }
+    .headerGrid h1 {
+      margin: 0rem 0.3rem;
+      padding-top: 0.5rem;
+      font-size: 1.2rem;
+      /*margin-right: 1rem; */
+      font-weight: bolder;
+      /*esto es una pseudo estilo de prueba para el titulo*/ }
+      .headerGrid h1:hover {
+        color: #3800e0; }
+    .headerGrid nav ul {
+      margin-top: 0.4rem;
+      margin-right: 5rem; }
+      .headerGrid nav ul li {
+        font-size: 1.2rem;
+        padding: 0.3rem 1.2rem; }
+    .headerGrid div a {
+      font-size: 1.2rem; }
+      .headerGrid div a img {
+        width: 58px;
+        height: 58px; }
+  main form {
+    width: 45rem; }
+  .asideGrid {
+    background-color: rgba(255, 255, 255, 0);
+    /*estoydando transparencia al color agregando la intensidad de transparencia 0.3*/
+    background: linear-gradient(to bottom, rgba(77, 77, 76, 0), rgba(177, 210, 248, 0));
+    right: 1.6rem;
+    height: 62.5rem; }
+    .asideGrid h3 {
+      background-color: rgba(30, 10, 72, 0.8);
+      font-size: 1.2rem;
+      line-height: 1.2;
+      font-weight: 800; }
+    .asideGrid ul a div {
+      font-size: 1.3rem; }
+      .asideGrid ul a div:hover img {
+        background-color: rgba(247, 247, 21, 0.2);
+        /*estoydando transparencia al color agregando la intensidad de transparencia 0.3*/
+        background: linear-gradient(to bottom, rgba(77, 77, 76, 0.6), rgba(177, 210, 248, 0.542)); }
+      .asideGrid ul a div img {
+        width: 17rem;
+        /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/ }
+  footer {
+    flex-flow: column wrap;
+    margin-right: 18rem;
+    margin-bottom: 0rem;
+    height: 0rem; }
+    footer h2 {
+      padding-right: 16rem; }
+      footer h2 span {
+        font-family: "Montserrat", sans-serif;
+        color: #505052f7;
+        font-size: 1.3rem;
+        font-weight: bold; }
+    footer .telefonoFooter {
+      margin: 0.5rem 8.5rem 0.5rem 1rem; }
+  .mainMippto .tituloFormulario {
+    font-size: 2.4rem;
+    line-height: 1.6rem;
+    margin-left: 9.2rem; }
+  .mainMippto .formMippto {
+    font-size: 1.6rem;
+    line-height: 1.2; }
+    .mainMippto .formMippto input {
+      padding-top: 0.5rem;
+      margin-bottom: 1.2rem; }
+  input:focus {
+    width: 55rem;
+    height: 4rem; }
+  textarea:focus {
+    width: 55rem;
+    height: 20rem; }
+  select:focus {
+    width: 55rem;
+    height: 4rem; }
+  .mainServicios {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+    width: fit-content; }
     .mainServicios .mainDivServicios .tituloServicios {
       /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
       margin: 9rem 2.3rem 0rem 1rem;

@@ -10,17 +10,30 @@
    flex-flow: row wrap;
    background-image:linear-gradient(to right, white, rgb(106, 205, 248)) ;
    .img-contacto {
-     width: 48rem;
+     width: 38rem;
      height: max-content;
      margin-left: 11rem;
      padding-top: 1.6rem;
     }
-  }
-  main article form{
-    font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-    font-size: 1.9rem;
-    font-weight: 800;
-    line-height: 1.4;
+    .formContacto{
+      font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+      font-size: 1.9rem;
+      font-weight: 800;
+      line-height: 1.4;
+      padding-top: 10rem;
+      .formPaddingPasame {
+        padding: 3.8rem;
+        align-self: center;
+        color: #ffffff;
+        font-weight: bolder;
+        background-color: #089b7480;
+      }
+    }
+    .tituloFormulario {
+     margin-left: 19.2rem;
+     font-size: 8rem;
+     color: gray;
+    } 
   }
 
 .inputMediumObs {
@@ -28,7 +41,4 @@
 }
  .inputMediumMail {
    width: 48rem;
- }
- .tituloFormulario {
-  margin-left: 19.2rem;
  }
