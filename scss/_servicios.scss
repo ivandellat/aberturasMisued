@@ -9,17 +9,15 @@
     
     margin: auto 4rem;
     height: 102rem;
-    width: auto;
+    width: 70%;
 
-    background-image: url("../assets/img/camion\ misued.jpg");
+    background-image: url("../assets/img/camion\ misued.jpg"); alt: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     
     .mainDivServicios {
       color: #000000ef;
       width: 130rem;
-      border-top: 0.5rem;
-      border-bottom: 0.4rem;
       display: flex;
       flex-flow: column wrap;
       align-content: flex-start;

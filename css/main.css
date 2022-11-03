@@ -299,15 +299,14 @@ select:focus {
   line-height: 3rem;
   margin: auto 4rem;
   height: 102rem;
-  width: auto;
+  width: 70%;
   background-image: url("../assets/img/camion misued.jpg");
+  alt: 100%;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: 100% 100%; }
   .mainServicios .mainDivServicios {
     color: #000000ef;
     width: 130rem;
-    border-top: 0.5rem;
-    border-bottom: 0.4rem;
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start; }
@@ -531,34 +530,39 @@ select:focus {
     width: 55rem;
     height: 4rem; }
   .mainServicios {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1.5rem;
     line-height: 3rem;
-    background-position: center;
-    background-size: cover;
-    height: fit-content;
+    background-position: start;
+    height: auto;
     width: auto; }
-    .mainServicios .mainDivServicios .tituloServicios {
-      /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
-      margin: 9rem 2.3rem 2.2rem 1rem;
-      margin-left: 10.5rem;
-      -webkit-transform: rotate(-353deg);
-      -moz-transform: rotate(-353deg);
-      -ms-transform: rotate(-353deg);
-      -o-transform: rotate(-353deg);
-      transform: rotate(-353deg);
-      -webkit-transform-origin: 50% 50%;
-      -moz-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      -o-transform-origin: 50% 50%;
-      transform-origin: 50% 50%; }
-    .mainServicios .mainDivServicios .mainH2 {
-      margin: 6rem;
-      padding-top: 0.7rem;
-      margin-bottom: 3rem;
-      font-weight: 60rem; }
-    .mainServicios .mainDivServicios .mainPservicios {
-      font-size: 1.9rem;
-      font-weight: bolder; }
+    .mainServicios .mainDivServicios {
+      width: auto; }
+      .mainServicios .mainDivServicios .tituloServicios {
+        /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+        margin: 8.5rem 2.3rem 8.6rem 1rem;
+        margin-left: 9rem;
+        font-size: 4.5rem;
+        background-color: rgba(127, 165, 255, 0.382);
+        -webkit-transform: rotate(-347deg);
+        -moz-transform: rotate(-347deg);
+        -ms-transform: rotate(-347deg);
+        -o-transform: rotate(-347deg);
+        transform: rotate(-347deg);
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; }
+      .mainServicios .mainDivServicios .mainH2 {
+        margin: 6rem;
+        padding-top: 0.7rem;
+        margin-bottom: 3rem;
+        font-weight: 60rem; }
+      .mainServicios .mainDivServicios .mainPservicios {
+        font-size: 1.9rem;
+        font-weight: bolder; }
   .galeria {
     width: 66rem;
     height: fit-content;

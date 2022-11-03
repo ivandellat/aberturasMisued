@@ -115,26 +115,32 @@
 
         //Servicios//
     .mainServicios {
+      display: flex;
+      flex-wrap: wrap;
         font-size: 1.5rem;
         line-height: 3rem;
 
-        background-position: center;
-        background-size:cover;
+        background-position: start;
+        // background-size: 50% 50%;
+
     
-        height: fit-content;
+        height: auto;
         width: auto;
         .mainDivServicios {
+          width: auto;
             .tituloServicios {
               /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
-              margin: 9rem 2.3rem 2.2rem 1rem;
-              margin-left: 10.5rem;
+              margin: 8.5rem 2.3rem 8.6rem 1rem;
+              margin-left: 9rem;
+              font-size: 4.5rem;
+              background-color: rgba(127, 165, 255, 0.382);
 
                //texto inclinado//
-              -webkit-transform: rotate(-353deg); 
-              -moz-transform: rotate(-353deg); 
-              -ms-transform: rotate(-353deg); 
-              -o-transform: rotate(-353deg); 
-              transform: rotate(-353deg); 
+              -webkit-transform: rotate(-347deg); 
+              -moz-transform: rotate(-347deg); 
+              -ms-transform: rotate(-347deg); 
+              -o-transform: rotate(-347deg); 
+              transform: rotate(-347deg); 
               
               -webkit-transform-origin: 50% 50%; 
               -moz-transform-origin: 50% 50%; 
