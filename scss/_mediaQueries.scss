@@ -201,199 +201,199 @@
     }
 }
 
-@media screen and (max-width:500px) {
-  .headerGrid {
-    flex-flow: row wrap;
-    justify-content:flex-start;  /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
-    align-items:center;
-    padding: 0rem;
-    h1 {
-        margin: 0rem 0.3rem;
-        padding-top: 0.5rem;
-        font-size: 1.2rem;
-        /*margin-right: 1rem; */
-        font-weight: bolder;
-        /*esto es una pseudo estilo de prueba para el titulo*/
-        &:hover {
-            color: rgb(56, 0, 224);
-        }
-    }
-    nav ul { 
-        margin-top: 0.4rem;
-        margin-right: 5rem;
-        li {
-          font-size: 1.2rem;
-          padding: 0.3rem 1.2rem;
-        }         
-    }
-    div {
-        a {
-        font-size: 1.2rem;
-        img {
-            width: 58px;
-            height: 58px;
-            }
-          }
-        }
-}
+ @media screen and (max-width:500px) {
+//   .headerGrid {
+//     flex-flow: row wrap;
+//     justify-content:flex-start;  /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
+//     align-items:center;
+//     padding: 0rem;
+//     h1 {
+//         margin: 0rem 0.3rem;
+//         padding-top: 0.5rem;
+//         font-size: 1.2rem;
+//         /*margin-right: 1rem; */
+//         font-weight: bolder;
+//         /*esto es una pseudo estilo de prueba para el titulo*/
+//         &:hover {
+//             color: rgb(56, 0, 224);
+//         }
+//     }
+//     nav ul { 
+//         margin-top: 0.4rem;
+//         margin-right: 5rem;
+//         li {
+//           font-size: 1.2rem;
+//           padding: 0.3rem 1.2rem;
+//         }         
+//     }
+//     div {
+//         a {
+//         font-size: 1.2rem;
+//         img {
+//             width: 58px;
+//             height: 58px;
+//             }
+//           }
+//         }
+// }
 
-main form {
-    width: 45rem;
-}
+// main form {
+//     width: 45rem;
+// }
 
-.asideGrid {
-    background-color: rgba(255, 255, 255, 0);
-    /*estoydando transparencia al color agregando la intensidad de transparencia 0.3*/
-    background: linear-gradient(to bottom,rgba(77, 77, 76, 0), rgba(177, 210, 248, 0));
-    right: 1.6rem;
-    height: 62.5rem;
-    h3{
-        background-color: rgba(30, 10, 72, 0.8);
-        font-size: 1.2rem;
-        line-height: 1.2;
-        font-weight: 800;
-    }
-    ul a div {
-        font-size: 1.3rem;
-        &:hover img { 
-            background-color: rgba(247, 247, 21, 0.2);
-            /*estoydando transparencia al color agregando la intensidad de transparencia 0.3*/
-            background: linear-gradient(to bottom,rgba(77, 77, 76, 0.6), rgba(177, 210, 248, 0.542));
-          }
-          img {
-            width: 17rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
-          }
-    }
-}
+// .asideGrid {
+//     background-color: rgba(255, 255, 255, 0);
+//     /*estoydando transparencia al color agregando la intensidad de transparencia 0.3*/
+//     background: linear-gradient(to bottom,rgba(77, 77, 76, 0), rgba(177, 210, 248, 0));
+//     right: 1.6rem;
+//     height: 62.5rem;
+//     h3{
+//         background-color: rgba(30, 10, 72, 0.8);
+//         font-size: 1.2rem;
+//         line-height: 1.2;
+//         font-weight: 800;
+//     }
+//     ul a div {
+//         font-size: 1.3rem;
+//         &:hover img { 
+//             background-color: rgba(247, 247, 21, 0.2);
+//             /*estoydando transparencia al color agregando la intensidad de transparencia 0.3*/
+//             background: linear-gradient(to bottom,rgba(77, 77, 76, 0.6), rgba(177, 210, 248, 0.542));
+//           }
+//           img {
+//             width: 17rem; /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/
+//           }
+//     }
+// }
 
-footer {
-    flex-flow: column wrap;
-    margin-right: 18rem;
-    margin-bottom: 0rem;
-    height: 0rem;
-    h2 {
-        padding-right: 16rem;
-        span {
-            font-family: "Montserrat", sans-serif;
-            color: #505052f7;
-            font-size:1.3rem;
-            font-weight: bold;
-        } }
-    .telefonoFooter {
-        margin: 0.5rem 8.5rem 0.5rem 1rem; 
-    } 
-    }
+// footer {
+//     flex-flow: column wrap;
+//     margin-right: 18rem;
+//     margin-bottom: 0rem;
+//     height: 0rem;
+//     h2 {
+//         padding-right: 16rem;
+//         span {
+//             font-family: "Montserrat", sans-serif;
+//             color: #505052f7;
+//             font-size:1.3rem;
+//             font-weight: bold;
+//         } }
+//     .telefonoFooter {
+//         margin: 0.5rem 8.5rem 0.5rem 1rem; 
+//     } 
+//     }
 
-    //Mi presupuesto//
-.mainMippto{ //formulario de page mi presupuesto//
-    .tituloFormulario {
-        font-size: 2.4rem;
-        line-height: 1.6rem;
-        margin-left: 9.2rem;
-    }
-    .formMippto {
-        font-size: 1.6rem;
-        line-height: 1.2;
-        input {
-            padding-top: 0.5rem;
-            margin-bottom: 1.2rem;
-        }
-    }
-}
+//     //Mi presupuesto//
+// .mainMippto{ //formulario de page mi presupuesto//
+//     .tituloFormulario {
+//         font-size: 2.4rem;
+//         line-height: 1.6rem;
+//         margin-left: 9.2rem;
+//     }
+//     .formMippto {
+//         font-size: 1.6rem;
+//         line-height: 1.2;
+//         input {
+//             padding-top: 0.5rem;
+//             margin-bottom: 1.2rem;
+//         }
+//     } 
+// }
 
-input:focus { //es una pseudo-clase para form de pages//
-    width: 55rem;
-    height: 4rem;
-  }
+// input:focus { //es una pseudo-clase para form de pages//
+//     width: 55rem;
+//     height: 4rem;
+//   }
 
-textarea:focus { //es una pseudo-clase para form de pages//
-    width: 55rem;
-    height: 20rem;
-  }
+// textarea:focus { //es una pseudo-clase para form de pages//
+//     width: 55rem;
+//     height: 20rem;
+//   }
 
-select:focus { //es una pseudo-clase para form de pages//
-    width: 55rem;
-    height: 4rem;
-  }
+// select:focus { //es una pseudo-clase para form de pages//
+//     width: 55rem;
+//     height: 4rem;
+//   }
 
-    //Servicios//
-.mainServicios {
-    font-size: 1.5rem;
-    line-height: 3rem;
+//     //Servicios//
+// .mainServicios {
+//     font-size: 1.5rem;
+//     line-height: 3rem;
 
-    background-position: center;
-    background-size:cover;
+//     background-position: center;
+//     background-size:cover;
 
-    height: fit-content;
-    width: fit-content;
-    .mainDivServicios {
-        .tituloServicios {
-          /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
-          margin: 9rem 2.3rem 0rem 1rem;
-          margin-left: 7.5rem;
+//     height: fit-content;
+//     width: fit-content;
+//     .mainDivServicios {
+//         .tituloServicios {
+//           /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+//           margin: 9rem 2.3rem 0rem 1rem;
+//           margin-left: 7.5rem;
 
-           //texto inclinado//
-          -webkit-transform: rotate(-353deg); 
-          -moz-transform: rotate(-353deg); 
-          -ms-transform: rotate(-353deg); 
-          -o-transform: rotate(-353deg); 
-          transform: rotate(-353deg); 
+//            //texto inclinado//
+//           -webkit-transform: rotate(-353deg); 
+//           -moz-transform: rotate(-353deg); 
+//           -ms-transform: rotate(-353deg); 
+//           -o-transform: rotate(-353deg); 
+//           transform: rotate(-353deg); 
           
-          -webkit-transform-origin: 50% 50%; 
-          -moz-transform-origin: 50% 50%; 
-          -ms-transform-origin: 50% 50%; 
-          -o-transform-origin: 50% 50%; 
-          transform-origin: 50% 50%; 
-        }
-        .mainH2 {
-          margin: 6rem;
-          padding-top: 0.7rem;
-          margin-bottom: 3rem;
-          font-weight: 60rem;
-        }
-        .mainPservicios {
-          font-size: 1.9rem;
-          font-weight: bolder;
-        }
-    }   
-}
+//           -webkit-transform-origin: 50% 50%; 
+//           -moz-transform-origin: 50% 50%; 
+//           -ms-transform-origin: 50% 50%; 
+//           -o-transform-origin: 50% 50%; 
+//           transform-origin: 50% 50%; 
+//         }
+//         .mainH2 {
+//           margin: 6rem;
+//           padding-top: 0.7rem;
+//           margin-bottom: 3rem;
+//           font-weight: 60rem;
+//         }
+//         .mainPservicios {
+//           font-size: 1.9rem;
+//           font-weight: bolder;
+//         }
+//     }   
+// }
 
-//Deseos de Clientes//  
-.galeria {
-    width: 66rem;
-    height: fit-content;
-    margin-left: 5rem;
-    .carousel-item {
-      .textCarousel {
-        font-size: 2rem;
-      }
-      .textCarousel2 {
-        font-size: 2rem;
-      }
-    }
-  }
+// //Deseos de Clientes//  
+// .galeria {
+//     width: 66rem;
+//     height: fit-content;
+//     margin-left: 5rem;
+//     .carousel-item {
+//       .textCarousel {
+//         font-size: 2rem;
+//       }
+//       .textCarousel2 {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
 
-//Contacto//  
-#iframeMap {
-    margin: 3rem 5rem;
-    width: 58rem;
-    }
+// //Contacto//  
+// #iframeMap {
+//     margin: 3rem 5rem;
+//     width: 58rem;
+//     }
     
-.secContacto {
-    flex-flow: column wrap;
-    background-image:linear-gradient(to right, white, rgba(106, 205, 248, 0.4)) ;
-.img-contacto {
-    width: 48rem;
-    margin-left: 9rem;
-}
-}
-main article form{
-    font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-    font-size: 1.7rem;
-}
+// .secContacto {
+//     flex-flow: column wrap;
+//     background-image:linear-gradient(to right, white, rgba(106, 205, 248, 0.4)) ;
+// .img-contacto {
+//     width: 48rem;
+//     margin-left: 9rem;
+// }
+// }
+// main article form{
+//     font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+//     font-size: 1.7rem;
+// }
 
-.inputMediumObs {
-    width: 62rem;
-    font-weight: 500; //este estilo es un agregado y una prueba//
-}
+// .inputMediumObs {
+//     width: 62rem;
+//     font-weight: 500; //este estilo es un agregado y una prueba//
+// }
 }
