@@ -37,7 +37,7 @@ html {
           
           h1 {
             color: #002a64c1;
-            margin-right: 0.4rem;
+            margin-right: 0.3rem;
             font-size: 1.8rem;
             /*margin-right: 1rem; */
             font-weight: bold;
@@ -46,7 +46,7 @@ html {
               color: rgb(0, 224, 150);
             }
           }
-          nav ul {
+          nav ul li {
             display: flex;
             flex-flow: row wrap; /*aplico para que el contenido respete el tamaño y separacion de los elementos li del ul poniendolos en dos lineas horizontales por defecto, y asi evitar que me los junte o achique*/
             justify-content: center;
@@ -54,27 +54,27 @@ html {
             font-weight: bold; /* le doy mayor grosor a la letra */
             font-size: 1.7rem;
             list-style-type: none; /* elimino los puntos del menu list */
-          
+            
             /* margin: 0.3rem 0.3rem; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */
-            li {
+            ul li {
               border-color: white;
               border-left: solid 2px rgb(178, 194, 208); /* de esta manera borro los bordes que no quiero, luego abajo aplico especificidad */
               border-right: solid 2px rgb(135, 200, 222); /* con estas propiedades jugué con el diseño de bordes en el menu*/
-            
+              
               display: inline-block; /* convierto mi menu en horizontal y al ser también "block" le sumo propiedades de altura (de bloque), ver propiedad con flex box */
               margin: 0.7rem auto;
               padding: 0.7rem 2.4rem;
-              a {
-                color: #ff009d;
-                text-decoration: none; /*le scao el subrayado al texto del menu*/
-                &:hover {
-                  color: rgb(3, 137, 137); /*con esta funcion doy color cuando señalo las palabras del menu*/
-                }
-              }
+            }
+          }
+          a {
+            color: #ff009d;
+            text-decoration: none; /*le scao el subrayado al texto del menu*/
+            &:hover {
+              color: rgb(3, 137, 137); /*con esta funcion doy color cuando señalo las palabras del menu*/
             }
           }
         }
-
+        
       
       main { /*MAIN*/
         grid-area: main; /*solo lo creo para poder darle funcionamiento al grid para lograr la media queris*/
