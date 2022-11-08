@@ -1,13 +1,14 @@
 .mainMippto{
     background-image: url("../assets/img/varios3_galeria.jpg");
     background-size: cover;
+    object-fit: cover;
     .tituloFormulario {
         font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
         font-size: 3.6rem;
-        font-weight: 800;
+        font-weight: 1000;
         font-family: "Montserrat", sans-serif;
         line-height: 1.9rem;
-        margin-left: 20rem;
+        margin-left: 17rem;
     }
     .formMippto {
         font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/

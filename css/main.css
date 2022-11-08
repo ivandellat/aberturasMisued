@@ -159,19 +159,27 @@ html {
       /*FOOTER*/
       grid-area: footer;
       background-color: #ffffff;
-      margin-top: auto;
+      margin-left: 0.5rem;
       margin-bottom: 0.7rem;
       height: fit-content;
-      align-items: center;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center; }
-      html body footer h2 {
-        font-family: "Montserrat", sans-serif;
-        color: #505052f7;
-        font-size: large;
-        font-weight: bold;
-        margin-left: 8rem; }
+      justify-content: center;
+      align-items: center; }
+      html body footer section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6rem; }
+        html body footer section div p {
+          font-family: "Montserrat", sans-serif;
+          color: #0b0b42f7;
+          font-size: large;
+          font-weight: bold;
+          margin-left: auto; }
+        html body footer section .telefonoFooter {
+          margin-left: 30rem; }
       html body footer div {
         display: flex;
         /*aplico propiedad para poder aplicar padding a los hijos y separarlos entre sí, además aplico direccion y wrap/responsivo*/
@@ -188,9 +196,9 @@ html {
   background-image: url("../assets/img/icono misued mas chico.jpg");
   background-repeat: no-repeat;
   /*de esta manera */
-  background-position: left;
+  background-position: auto;
   /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
-  margin-left: 8rem; }
+  padding-left: 8rem; }
   .footerGrid .redesSociales {
     width: 6.3rem;
     position: fixed;
@@ -217,13 +225,13 @@ main form {
 
 .tituloFormulario {
   display: block;
-  margin: 5rem; }
+  margin: 2rem; }
 
 .inputMediumMail {
   width: 16rem; }
 
 .formPadding {
-  padding-top: 3.8rem;
+  padding-top: 1.8rem;
   background-color: aliceblue; }
 
 /*aplico pseudoclases en las pages*/
@@ -274,23 +282,28 @@ select:focus {
     background-image: url("../assets/img/mampara baño junin 111.jpg");
     background-position: bottom;
     background-size: cover;
+    object-fit: cover;
     grid-area: img1; }
   .mainIndex .divIndex2 {
     background-image: url("../assets/img/escalera_galeria.jpg");
     background-size: cover;
+    object-fit: cover;
     grid-area: img2; }
   .mainIndex .divIndex3 {
     background-image: url("../assets/img/ventanas blancas moris.jpg");
     background-position: center;
     background-size: cover;
+    object-fit: cover;
     grid-area: img3; }
   .mainIndex .divIndex4 {
     background-image: url("../assets/img/ventana cansino editar 2.jpg");
     background-position: center;
     background-size: cover;
-    grid-area: img4; }
+    object-fit: cover;
+    grid-area: img4;
+    height: auto; }
 
-.mainServicios {
+li .mainServicios {
   font-family: "Montserrat", sans-serif;
   /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
   font-size: 2.5rem;
@@ -298,19 +311,20 @@ select:focus {
   font-family: "Montserrat", sans-serif;
   line-height: 3rem;
   margin: auto 4rem;
-  height: 102rem;
+  height: auto;
   width: 70%;
   background-image: url("../assets/img/camion misued.jpg");
   alt: 100%;
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
-  .mainServicios .mainDivServicios {
+  background-size: 100% 100%;
+  object-fit: cover; }
+  li .mainServicios .mainDivServicios {
     color: #000000ef;
     width: 130rem;
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start; }
-    .mainServicios .mainDivServicios .tituloServicios {
+    li .mainServicios .mainDivServicios .tituloServicios {
       /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
       margin: 4rem 1.6rem;
       margin-left: 16rem;
@@ -319,42 +333,107 @@ select:focus {
       font-family: "Montserrat", sans-serif;
       line-height: 2.4rem;
       text-align: start;
-      color: #030c08ef; }
-    .mainServicios .mainDivServicios .mainH2 {
+      color: #00502cef; }
+    li .mainServicios .mainDivServicios .mainH2 {
       margin-top: 4rem;
       margin-bottom: 0.2rem;
       font-weight: 1000;
       padding-top: 0.3rem;
       font-size: 2.5rem; }
-    .mainServicios .mainDivServicios .textoColorAzul {
+    li .mainServicios .mainDivServicios .textoColorAzul {
       color: blue;
       font-weight: 1000; }
-    .mainServicios .mainDivServicios .fondoTextoServicios {
+    li .mainServicios .mainDivServicios .fondoTextoServicios {
       background-color: #ffffff;
       padding: 0.3rem;
       line-height: 2.5rem; }
-  .mainServicios .divServicios1 {
+  li .mainServicios .divServicios1 {
     background-color: #d2e9f46f;
     margin-bottom: 12.8rem; }
-  .mainServicios .divServicios2 {
+  li .mainServicios .divServicios2 {
     background-color: #d2e9f469;
     margin-bottom: 12.8rem;
     padding: auto, 1.6rem; }
-  .mainServicios .fw-bolder {
+  li .mainServicios .fw-bolder {
     font-weight: bolder !important;
     padding-bottom: 3rem; }
 
+.container {
+  margin: auto;
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 3rem;
+  font-size: 20rem;
+  background-image: url("../assets/img/camion misued.jpg");
+  alt: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: x-large; }
+
+ul.slider {
+  position: relative;
+  width: 80rem;
+  height: 60rem;
+  font-size: x-large; }
+
+ul.slider li {
+  font-size: x-large;
+  position: absolute;
+  top: 0rem;
+  left: 8rem;
+  opacity: 0;
+  width: 30rem;
+  height: 40rem;
+  transition: opacity .5s;
+  background: rgba(255, 255, 255, 0.2); }
+
+ul.slider li:first-child {
+  opacity: 0;
+  /*Mostramos el primer <li>*/ }
+
+ul.slider li:target {
+  opacity: 1;
+  /*Mostramos el <li> del enlace que pulsemos*/ }
+
+.menu {
+  text-align: center;
+  margin: 15rem; }
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+  margin: 0rem 5rem auto auto; }
+
+.menu li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  border-radius: 100%; }
+
 .mainMippto {
   background-image: url("../assets/img/varios3_galeria.jpg");
-  background-size: cover; }
+  background-size: cover;
+  object-fit: cover; }
   .mainMippto .tituloFormulario {
     font-family: "Montserrat", sans-serif;
     /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
     font-size: 3.6rem;
-    font-weight: 800;
+    font-weight: 1000;
     font-family: "Montserrat", sans-serif;
     line-height: 1.9rem;
-    margin-left: 20rem; }
+    margin-left: 17rem; }
   .mainMippto .formMippto {
     font-family: "Montserrat", sans-serif;
     /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
@@ -437,8 +516,9 @@ select:focus {
       font-weight: bolder;
       background-color: #089b7480; }
   .secContacto .tituloFormulario {
-    margin-left: 19.2rem;
-    font-size: 8rem;
+    margin-left: 18.2rem;
+    margin-bottom: 0rem;
+    font-size: 6rem;
     color: gray; }
 
 .inputMediumObs {
@@ -497,22 +577,21 @@ select:focus {
       .asideGrid ul a div img {
         width: 17rem;
         /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/ }
-  footer {
-    flex-flow: column wrap;
-    margin-right: 18rem;
-    margin-bottom: 0rem;
-    height: 0rem; }
-    footer h2 {
-      padding-right: 16rem; }
-      footer h2 span {
-        font-family: "Montserrat", sans-serif;
-        color: #505052f7;
-        font-size: 1.3rem;
-        font-weight: bold; }
-    footer .telefonoFooter {
-      margin: 0.5rem 8.5rem 0.5rem 1rem; }
+  .footerGrid {
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem; }
+    .footerGrid .infoFooter {
+      flex-flow: column wrap;
+      justify-content: space-around;
+      margin-left: 9.1rem; }
+      .footerGrid .infoFooter div p {
+        font-size: medium; }
+      .footerGrid .infoFooter .telefonoFooter {
+        margin-left: auto; }
   .mainMippto .tituloFormulario {
     font-size: 2.4rem;
+    font-weight: bold;
     line-height: 1.6rem;
     margin-left: 9.2rem; }
   .mainMippto .formMippto {
@@ -522,7 +601,7 @@ select:focus {
       padding-top: 0.5rem;
       margin-bottom: 1.2rem; }
   input:focus {
-    width: 55rem;
+    width: 32rem;
     height: 4rem; }
   textarea:focus {
     width: 55rem;
@@ -532,9 +611,13 @@ select:focus {
     height: 4rem; }
   .mainServicios {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
     font-size: 1.5rem;
     line-height: 3rem;
+    margin-left: 0rem;
+    padding-left: 0rem;
     background-position: start;
     height: auto;
     width: auto; }
@@ -560,14 +643,14 @@ select:focus {
         margin: 6rem;
         padding-top: 0.7rem;
         margin-bottom: 3rem;
-        font-weight: 60rem; }
+        font-weight: 900; }
       .mainServicios .mainDivServicios .mainPservicios {
         font-size: 1.9rem;
         font-weight: bolder; }
   .galeria {
-    width: 66rem;
+    width: auto;
     height: fit-content;
-    margin-left: 5rem; }
+    margin: 1rem 3rem; }
     .galeria .carousel-item .textCarousel {
       font-size: 2rem; }
     .galeria .carousel-item .textCarousel2 {
@@ -590,28 +673,25 @@ select:focus {
     font-weight: 500; } }
 
 @media screen and (max-width: 500px) {
-  header {
+  .headerGrid {
     /*CABECERA*/
     background: radial-gradient(white, #fafbfd);
     /*pruebo un gradiente bastante sutil para ver como queda*/
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    /*dejo esto comentado debido a que estoy usando una clase con bootstrap y que no sobrescriba el codigo */
+    flex-flow: row wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: center;
-    height: min-content;
+    height: auto;
+    width: auto;
     font-family: "Montserrat", sans-serif;
     /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/ }
-    header h1 {
+    .headerGrid h1 {
       color: #002a64c1;
-      margin-right: 0.3rem;
-      font-size: 1.8rem;
-      /*margin-right: 1rem; */
-      font-weight: bold;
-      /*esto es una pseudo estilo de prueba para el titulo*/ }
-      header h1:hover {
-        color: #00e096; }
-    header nav ul li {
+      margin-right: 0rem;
+      margin-left: 1rem;
+      font-size: 1.8rem; }
+    .headerGrid nav ul li {
       font-weight: bold;
       /* le doy mayor grosor a la letra */
       font-size: 1.7rem;
@@ -620,9 +700,12 @@ select:focus {
       display: inline-block;
       position: relative;
       /* margin: 0.3rem 0.3rem; SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX */ }
-      header nav ul li:hover ul {
+      .headerGrid nav ul li:hover ul {
         display: flex;
         flex-flow: column wrap;
+        align-content: center;
+        align-items: center;
+        margin-top: auto;
         background-color: #7ebae2;
         /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
         background: linear-gradient(to bottom, rgba(255, 255, 209, 0.5), white);
@@ -631,22 +714,180 @@ select:focus {
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px; }
-      header nav ul li ul {
-        position: relative;
+      .headerGrid nav ul li ul {
+        position: absolute;
         display: none;
         list-style-type: none; }
-        header nav ul li ul li {
+        .headerGrid nav ul li ul li {
+          color: deeppink;
           border-color: none;
           border-left: none;
           /* de esta manera borro los bordes que no quiero, luego abajo aplico especificidad */
           border-right: none;
           /* con estas propiedades jugué con el diseño de bordes en el menu*/
-          display: block;
+          display: inline-block;
           /* convierto mi menu en horizontal y al ser también "block" le sumo propiedades de altura (de bloque), ver propiedad con flex box */
           margin: 0.7rem auto;
-          padding: 0.7rem 2.4rem; }
-      header nav ul li div a {
+          padding: 0.7rem 3.4rem; }
+      .headerGrid nav ul li div a {
         font-size: 1.2rem; }
-        header nav ul li div a img {
+        .headerGrid nav ul li div a img {
           width: 58px;
-          height: 58px; } }
+          height: 58px; }
+  .mainIndex {
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "img1" "img1" "img3" "img3" "img2" "img2";
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    width: auto;
+    height: 60rem; }
+    .mainIndex .divIndex1 {
+      background-image: url("../assets/img/portonvidriado_galeria.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: auto; }
+    .mainIndex .divIndex3 {
+      background-repeat: no-repeat;
+      width: auto; }
+    .mainIndex .divIndex4 {
+      background-repeat: no-repeat;
+      width: auto; }
+  .asideGrid {
+    right: 1rem;
+    height: 12.5rem; }
+    .asideGrid h3 {
+      background-color: rgba(30, 10, 72, 0.8);
+      font-size: 1.2rem;
+      line-height: 1.2;
+      font-weight: 800; }
+    .asideGrid ul a div {
+      font-size: 1.3rem; }
+      .asideGrid ul a div:hover img {
+        background-color: rgba(247, 247, 21, 0.2);
+        /*estoydando transparencia al color agregando la intensidad de transparencia 0.3*/
+        background: linear-gradient(to bottom, rgba(77, 77, 76, 0.6), rgba(177, 210, 248, 0.542)); }
+      .asideGrid ul a div img {
+        width: 17rem;
+        /*SACAR ESTA PROPIEDAD CUANDO APLIQUE GRID O FLEX*/ }
+  footer {
+    /*FOOTER*/
+    grid-area: footer;
+    background-color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start; }
+    footer h2 {
+      font-family: "Montserrat", sans-serif;
+      color: #505052f7;
+      font-size: large;
+      font-weight: bold;
+      margin-left: 8rem; }
+    footer div {
+      display: flex;
+      /*aplico propiedad para poder aplicar padding a los hijos y separarlos entre sí, además aplico direccion y wrap/responsivo*/
+      flex-flow: column wrap; }
+      footer div a {
+        padding-top: 3.5rem;
+        /*con esta propiedad y gracias que hice flexible al div padre pude aplicarle propiedades box*/
+        padding-left: 2.4rem; }
+  input:focus {
+    width: 32rem;
+    height: 4rem; }
+  textarea:focus {
+    width: 32rem;
+    height: 20rem; }
+  select:focus {
+    width: 32rem;
+    height: 4rem; }
+  .mainServicios {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    background-position: center;
+    background-size: cover;
+    height: 60rem;
+    width: 35rem; }
+    .mainServicios .mainDivServicios .tituloServicios {
+      /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
+      margin: 9rem 2.3rem 0rem 1rem;
+      margin-left: 7.5rem; }
+  .galeria {
+    width: 60%;
+    height: auto;
+    margin: 1rem 2rem;
+    margin-left: 2rem; }
+    .galeria .carousel-item {
+      background-size: cover; }
+      .galeria .carousel-item .textCarousel {
+        font-size: 2rem;
+        text-align: center; }
+      .galeria .carousel-item .textCarousel2 {
+        font-size: 2rem;
+        text-align: center; }
+  #iframeMap {
+    margin: 2rem 3rem;
+    width: 32rem; }
+  .secContacto {
+    flex-flow: column wrap;
+    background-image: linear-gradient(to right, white, rgba(106, 205, 248, 0.4));
+    width: 37rem; }
+    .secContacto .img-contacto {
+      width: 32rem;
+      margin-left: 1rem;
+      height: fit-content;
+      background-size: cover; }
+      .secContacto .img-contacto img {
+        width: 35rem;
+        height: 30rem; }
+    .secContacto .formContacto {
+      font-size: 1.2rem;
+      padding-top: 0rem; }
+      .secContacto .formContacto .formPaddingPasame {
+        padding: 2.8rem; }
+    .secContacto .tituloFormulario {
+      margin-left: 6rem;
+      font-size: 3rem;
+      color: gray; }
+  main article form {
+    font-family: "Montserrat", sans-serif;
+    /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
+    font-size: 1.7rem; }
+  .inputMediumObs {
+    width: 32rem;
+    font-weight: 500; }
+  .inputMediumMail {
+    width: 32rem; }
+  .mainMippto {
+    background-image: url("../assets/img/varios3_galeria.jpg");
+    background-size: cover;
+    object-fit: cover;
+    width: 35rem; }
+    .mainMippto .tituloFormulario {
+      font-size: 2.6rem;
+      line-height: 1.9rem;
+      margin-left: 4rem; }
+    .mainMippto .formMippto {
+      font-size: 1.4rem;
+      font-weight: 800;
+      line-height: 1.4; }
+      .mainMippto .formMippto input {
+        padding-top: 0.5rem;
+        margin-bottom: 1.6rem; }
+  /* FORMULARIOS */
+  main form {
+    margin: 0px 10px 10px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 32rem; }
+  .tituloFormulario {
+    display: block;
+    margin: 3rem; }
+  .inputMediumMail {
+    width: 16rem; }
+  .formPadding {
+    padding-top: 3.8rem;
+    background-color: aliceblue; } }

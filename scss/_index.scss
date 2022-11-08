@@ -16,24 +16,29 @@
       background-image: url("../assets/img/mampara\ baño\ junin\ 111.jpg");
       background-position:bottom;
       background-size: cover;
+      object-fit: cover;
       grid-area:img1;
     }
     .divIndex2 {
       background-image: url("../assets/img/escalera_galeria.jpg");
       background-size: cover;
+      object-fit: cover;
       grid-area: img2;
     }
     .divIndex3 {
       background-image: url("../assets/img/ventanas\ blancas\ moris.jpg");
       background-position:center;
       background-size: cover;
+      object-fit: cover; //esta propiedad mantiene el aspecto de la imagen en armonia, puede que se pierda o gane parte de lo que se ve, por la correccion del aspecto//
       grid-area: img3
     }
     .divIndex4 {
       background-image: url("../assets/img/ventana\ cansino\ editar\ 2.jpg");
       background-position:center;
       background-size: cover;
+      object-fit: cover;
       grid-area: img4;
+      height: auto;
     }
   }
   

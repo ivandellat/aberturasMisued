@@ -1,0 +1,7 @@
+//base de flex//
+@mixin flexBase($d, $ff, $jc, $ai) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}

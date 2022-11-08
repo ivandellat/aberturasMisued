@@ -186,23 +186,28 @@ html {
 
         background-color: #ffffff;
 
-        margin-top: auto;
+        margin-left: 0.5rem;
         margin-bottom: 0.7rem;
         height: fit-content;
-        // width: $anchoRP;
 
-        align-items: center;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        @include flexBase(flex, row wrap, space-evenly, center);
 
-        h2 {
-          font-family: "Montserrat", sans-serif;
-          color: #505052f7;
-          font-size: large;
-          font-weight: bold;
-          
-          margin-left: 8rem;
+        section {
+          @include flexBase(flex, row wrap, space-between, center);
+          margin-left: 6rem;
+          div { 
+            p {
+            font-family: "Montserrat", sans-serif;
+            color: #0b0b42f7;
+            font-size: large;
+            font-weight: bold;
+            
+            margin-left: auto;
+            }
+          }
+          .telefonoFooter {
+            margin-left: 30rem;
+          }
         }
         div {
           display: flex;    /*aplico propiedad para poder aplicar padding a los hijos y separarlos entre sí, además aplico direccion y wrap/responsivo*/
@@ -229,9 +234,9 @@ html {
   
   background-image: url("../assets/img/icono\ misued\ mas\ chico.jpg");
   background-repeat: no-repeat; /*de esta manera */
-  background-position: left; /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
+  background-position: auto; /*de esta manera centro la imagen de fondo, para que me muestre el centro de la imagen inicialmente*/
 
-  margin-left: 8rem;
+  padding-left: 8rem;
   .redesSociales {  
     width: 6.3rem;  
     position: fixed;
@@ -239,7 +244,6 @@ html {
     bottom: 13rem;;
     .instagram {
       width: auto;
-      
       position: fixed;
       right: 7rem;
       bottom: 9.5rem;
@@ -265,7 +269,7 @@ html {
 
   .tituloFormulario {
     display: block;
-    margin: 5rem;
+    margin: 2rem;
   }
 
   .inputMediumMail {
@@ -273,7 +277,7 @@ html {
   }
   
   .formPadding {
-    padding-top: 3.8rem;
+    padding-top: 1.8rem;
     background-color: aliceblue;
   }
 
