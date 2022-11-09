@@ -485,8 +485,13 @@ ul.slider li:target {
       /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
       font-size: 2.9rem;
       /* margin-right: 1rem; */
-      font-weight: bolder;
-      text-align: left; }
+      font-weight: bold; }
+    .galeria .carousel-item .pSize {
+      font-size: 2.4rem;
+      text-align: center;
+      margin: 2rem 0rem; }
+    .galeria .carousel-item .h5Size {
+      text-align: center; }
 
 /* css de CONTACTO */
 #iframeMap {
@@ -814,20 +819,24 @@ ul.slider li:target {
     .mainServicios .mainDivServicios .tituloServicios {
       /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
       margin: 9rem 2.3rem 0rem 1rem;
-      margin-left: 7.5rem; }
+      margin-left: 7.5rem;
+      -webkit-transform: rotate(-353deg);
+      -moz-transform: rotate(-353deg);
+      -ms-transform: rotate(-353deg);
+      -o-transform: rotate(-353deg);
+      transform: rotate(-353deg);
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%; }
   .galeria {
-    width: 60%;
+    width: 90%;
     height: auto;
-    margin: 1rem 2rem;
+    margin: 0rem;
     margin-left: 2rem; }
     .galeria .carousel-item {
       background-size: cover; }
-      .galeria .carousel-item .textCarousel {
-        font-size: 2rem;
-        text-align: center; }
-      .galeria .carousel-item .textCarousel2 {
-        font-size: 2rem;
-        text-align: center; }
   #iframeMap {
     margin: 2rem 3rem;
     width: 32rem; }

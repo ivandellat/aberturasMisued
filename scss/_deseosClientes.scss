@@ -20,8 +20,15 @@
         font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
         font-size: 2.9rem;
         /* margin-right: 1rem; */
-        font-weight: bolder;
-        text-align: left;
+        font-weight: bold;
+      }
+      .pSize {
+        font-size: 2.4rem;
+        text-align: center;
+        margin: 2rem 0rem;
+      }
+      .h5Size {
+        text-align: center;
       }
     }
   }
