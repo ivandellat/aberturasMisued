@@ -6,6 +6,7 @@
         padding: 0rem;
         h1 {
             margin: 0rem 0.3rem;
+            padding-left: 5.3rem;
             padding-top: 0.5rem;
             font-size: 1.2rem;
             /*margin-right: 1rem; */
@@ -231,6 +232,7 @@
     color: #002a64c1;
     margin-right: 0rem;
     margin-left: 1rem;
+    padding-left: 0rem;
     font-size: 1.8rem;
   }
   nav{
@@ -249,7 +251,7 @@
         margin-top: auto;
   
         background-color: rgb(126, 186, 226); /*estoy dando transparencia al color agregando la intensidad de transparencia 0.3*/
-        background: linear-gradient(to bottom,rgba(255, 255, 209, 0.5), rgb(255, 255, 255));
+        background: linear-gradient(to bottom,rgba(231, 231, 210, 0.8), rgb(255, 255, 255));
   
         border-radius: 20px ;
         -webkit-border-radius: 20px ;
@@ -264,7 +266,7 @@
         display: none;
         list-style-type: none;
         li {
-          color: deeppink;
+          color: rgb(131, 0, 70);
           border-color: none;
           border-left: none; /* de esta manera borro los bordes que no quiero, luego abajo aplico especificidad */
           border-right: none; /* con estas propiedades jugué con el diseño de bordes en el menu*/
@@ -401,11 +403,20 @@ select:focus { //es una pseudo-clase para form de pages//
 
     height: 60rem;
     width: 35rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+
+    overflow: scroll;
     .mainDivServicios {
+      width: auto;
+      height: auto;
         .tituloServicios {
           /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
-          margin: 9rem 2.3rem 0rem 1rem;
-          margin-left: 7.5rem;
+          margin: 4rem 2.3rem 5rem 1rem;
+          margin-left: 0.5rem;
+          font-size: x-large;
           //texto inclinado//
           -webkit-transform: rotate(-353deg); 
           -moz-transform: rotate(-353deg); 
@@ -421,20 +432,6 @@ select:focus { //es una pseudo-clase para form de pages//
           }
         }
 }
-
-//         }
-//         .mainH2 {
-//           margin: 6rem;
-//           padding-top: 0.7rem;
-//           margin-bottom: 3rem;
-//           font-weight: 60rem;
-//         }
-//         .mainPservicios {
-//           font-size: 1.9rem;
-//           font-weight: bolder;
-//         }
-//     }   
-// }
 
 //Deseos de Clientes//  
 .galeria {

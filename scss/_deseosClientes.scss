@@ -6,21 +6,31 @@
     .carousel-item {
       background-size:contain;
       .textCarousel {
-        background-color: #024b3880;
+        background-color: #024b38c8;
         color: #FFFFFF;
-        font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
-        font-size: 2.9rem;
-        /* margin-right: 1rem; */
-        font-weight: bolder;
+        font-family: "Montserrat", sans-serif;
+        /*pongoestapropiedaddondequieraqueseapliquenlasfuentes,"sans-serif"eslasegundaopcionencasodequegooglefontssecaiga*/font-size: 2.9rem;
+        /*margin-right: 1rem;
+        */font-weight: bolder;
         text-align: left;
-      }
+        border-radius: 5px ;
+        -webkit-border-radius: 5px ;
+        -moz-border-radius: 5px ;
+        -ms-border-radius: 5px ;
+        -o-border-radius: 5px ;
+}
       .textCarousel2 {
-        background-color: #024b3880;
+        background-color: #024b38c0;
         color: #FFFFFF;
         font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
         font-size: 2.9rem;
         /* margin-right: 1rem; */
         font-weight: bold;
+        border-radius: 5px ;
+        -webkit-border-radius: 5px ;
+        -moz-border-radius: 5px ;
+        -ms-border-radius: 5px ;
+        -o-border-radius: 5px ;
       }
       .pSize {
         font-size: 2.4rem;

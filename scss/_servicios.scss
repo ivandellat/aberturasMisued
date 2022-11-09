@@ -1,6 +1,6 @@
  //en este archivo complique el codigo al no saber como resolver las propiedades de los h1 h2 h3, etc de bootstrap y los estilos del texto que no me permitian pisar el css de bootstrap y poder dejar el codigo de una manera mas limpia//
 
-li .mainServicios {
+.mainServicios {
     font-family: "Montserrat", sans-serif; /*pongo esta propiedad donde quiera que se apliquen las fuentes, "sans-serif" es la segunda opcion en caso de que google fonts se caiga*/
     font-size: 2.5rem;
     font-weight: 800;
@@ -9,30 +9,37 @@ li .mainServicios {
     
     margin: auto 4rem;
     height: auto;
-    width: 70%;
+    width: 102rem;
 
     background-image: url("../assets/img/camion\ misued.jpg"); alt: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     object-fit: cover;
     
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
     .mainDivServicios {
-      color: #000000ef;
-      width: 130rem;
-      display: flex;
-      flex-flow: column wrap;
-      align-content: flex-start;
-        .tituloServicios {
+      color: #ffffffef;
+      overflow:hidden;
+      width: 120rem;
+      height: auto;
+      padding: 1rem;
+      padding-right: 3rem;
+      .tituloServicios {
           /*los margins me sirve solo para aplicar espacios entre textos y titulos*/
           margin: 4rem 1.6rem;
-          margin-left: 16rem;
+          padding-top: 5rem;
+          margin-left: 10rem;
 
           font-size: 5rem;
           font-weight: 1000;
           font-family: "Montserrat", sans-serif;
           line-height: 2.4rem;
           text-align:start;
-          color: #00502cef
+          color: #ffffffef;
+          background-color: rgb(0, 132, 137);
+          
         }
         .mainH2 {
           margin-top: 4rem;
@@ -40,101 +47,37 @@ li .mainServicios {
           font-weight: 1000;
           padding-top: 0.3rem;
           font-size: 2.5rem;
+          width: auto;
         }
         .textoColorAzul {
-          color: blue;
+          color: rgb(24, 242, 0);
           font-weight: 1000;
         }
         .fondoTextoServicios {
-          background-color: #ffffff;
           padding: 0.3rem;
-          line-height: 2.5rem;
+          font-weight: 5rem;
+          font-weight: bold;
+        }
+        .text-nowrap {
+          font-weight: 5rem;
         }
       }
       .divServicios1 {
-        background-color: #d2e9f46f;
+        background-color: #656d70e9;
+        margin-bottom: 12.8rem;
+      }
+      .divServicios3 {
+        color:rgb(255, 255, 255);
+        background-color: #9848cde9;
         margin-bottom: 12.8rem;
       }
       .divServicios2 {
-        background-color:#d2e9f469;
+        background-color:#0087c6b6;
         margin-bottom: 12.8rem;
         padding: auto, 1.6rem;
       }
       .fw-bolder {
         font-weight: bolder!important;
-        padding-bottom: 3rem;
       }
     }
 
-    .container{
-      margin: auto;
-      background-color: white;
-      width: auto;
-      height: auto;
-      padding: 3rem;
-      font-size: 20rem;
-
-      background-image: url("../assets/img/camion\ misued.jpg"); alt: 100%;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      object-fit: cover;
-    }
-    
-    ul, li {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        font-size: x-large;
-    }
-    
-    ul.slider{
-      position: relative;
-      width: 80rem;
-      height: 60rem;
-      font-size: x-large;
-      
-    }
-    
-    ul.slider li {
-      font-size: x-large;
-        position: absolute;
-        top: 0rem;
-        left: 8rem;
-        opacity: 0;
-        width: 30rem;
-        height: 40rem;
-        transition: opacity .5s;
-        background:rgba(255, 255, 255, 0.2);
-    }
-    
-    
-    ul.slider li:first-child {
-        opacity: 0; /*Mostramos el primer <li>*/
-    }
-    
-    ul.slider li:target {
-        opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
-    }
-    
-    .menu{
-      text-align: center;
-      margin: 15rem;
-    }
-    
-    .menu li{
-      display: inline-block;
-      text-align: center;
-      margin: 0rem 5rem auto auto;
-    }
-    
-    .menu li a{
-      display: inline-block;
-      color: white;
-      text-decoration: none;
-      background-color: grey;
-      padding: 1rem;
-      width: 4rem;
-      height: 4rem;
-      font-size: 4rem;
-      border-radius: 100%;
-    }
