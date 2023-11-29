@@ -22,6 +22,7 @@ function cotizadorDeAbertura(ancho, alto, cantidad, abertura, tipoDeVidrio, colo
 }
 
 
+
 do  {
     let anchoDeAbertura =parseInt(prompt("Ingrese ancho de su abertura (en metros)"))
     let altoDeAbertura =parseInt(prompt("Ingrese alto de su abertura (en metros)"))
